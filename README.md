@@ -2,15 +2,25 @@
 
 ![UNIFIED Music](assets/unified-music.svg)
 
-**A local-first music experience exploring one coherent library, player, queue and audio-control system across mobile platforms.**
+**A local-first music system designed and engineered in Namibia—one coherent library, queue, player and audio-control experience.**
 
-> This is a public product and engineering case study. Deployable application source, device configuration, local media, build artefacts and private implementation details remain in a separate private repository.
+> This is a public product and engineering case study. Deployable source, device configuration, local media, build artefacts, credentials and private implementation details remain in a separate private repository.
+
+## UNIFIED 3.0 — Namib After Dark
+
+The 3.0 visual system moves away from generic neon glass toward a more ownable identity: obsidian night, warm dune light, Atlantic-blue information accents and restrained orchid highlights. Artwork remains the emotional centre while glass is limited to navigation and transient playback surfaces.
+
+| Home | Now Playing |
+| --- | --- |
+| <img src="assets/unified-3-home.jpg" width="360" alt="UNIFIED 3.0 Home screen"> | <img src="assets/unified-3-now-playing.jpg" width="360" alt="UNIFIED 3.0 Now Playing screen"> |
+
+These screens were captured from the installed `3.0-debug` build on a physical Android 15 device.
 
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
 
-I shaped the product direction, interaction system, visual language, shared domain model, Android playback implementation and Kotlin Multiplatform architecture.
+I shaped the product direction, interaction and visual systems, shared domain model, Android playback runtime, provider-neutral catalog foundation and Kotlin Multiplatform architecture.
 
 ## The problem
 
@@ -22,55 +32,71 @@ UNIFIED explores a calmer local-first model:
 DISCOVER → ORGANISE → QUEUE → PLAY → SHAPE THE SOUND → RETURN
 ```
 
-The product prioritises direct ownership of local music, visible playback state and a consistent interface without pretending unfinished cross-platform or network features already exist.
+Local ownership and honest playback state come first. Streaming providers enter through explicit capability boundaries instead of compromising offline reliability or pretending protected provider audio can be treated like local media.
 
 ## Product response
 
-- Local Android music discovery through the platform media library.
-- Queue, shuffle, repeat, seek and restored playback position.
-- Favourites, library sorting and grouped artist and album views.
-- Playlist creation, track actions and queue-editing foundations.
-- Smart-queue and listening-intelligence domain models.
-- Real-time equaliser, bass, loudness and dynamics controls.
-- Audio-reactive spectrum and waveform visualisation foundations.
-- A Compose interface spanning Home, Library, Playlists and Audio Lab.
-- Clear separation between shared music logic, shared UI and platform audio code.
+- Android MediaStore discovery for large on-device libraries.
+- Media3/ExoPlayer foreground playback with MediaSession, notification and lock-screen controls.
+- Durable current-track, position, shuffle, repeat and exact queue-order restoration using stable media identities.
+- Queue editing, shuffle, repeat, seeking and automatic completion handling.
+- Persistent favourites and playlists with grouped artist and album views.
+- Explainable Smart Mix and listening-intelligence foundations.
+- Equaliser, bass, loudness and dynamics controls through Audio Lab.
+- Audio-reactive spectrum and waveform visualisation.
+- A Compose interface spanning Home, Library, Search, Playlists, Now Playing and Audio Lab.
+- Provider-neutral Apple Music/Spotify gateway and ISRC-first cross-catalog merger; production adapters still require registered applications and credentials.
 
 ## Design approach
 
-1. **Observe** — identify where local music players fragment discovery, playback and organisation.
+1. **Observe** — identify where local players fragment discovery, playback and organisation.
 2. **Frame** — treat the queue and current track as one durable product state.
-3. **Design** — build a visual system around artwork, readable hierarchy and restrained motion.
-4. **Build** — share domain and interface logic with Kotlin Multiplatform while keeping platform audio responsibilities explicit.
-5. **Evaluate** — verify library, playback, persistence and device-permission behaviour before expanding the platform surface.
-6. **Harden** — add meaningful tests, background media indexing and honest failure states before release claims.
+3. **Design** — build hierarchy around artwork, readable type, consistent controls and restrained motion.
+4. **Localise the identity** — derive warmth and atmosphere from Namibia without reducing the interface to literal motifs.
+5. **Build** — share domain and interface logic with Kotlin Multiplatform while keeping platform playback responsibilities explicit.
+6. **Evaluate** — verify permissions, persistence, background playback and system media controls on physical hardware.
+7. **Harden** — make automated tests, lint and reproducible builds release gates.
 
 ## Engineering overview
 
 - Kotlin Multiplatform
 - Jetpack Compose and Compose Multiplatform foundations
 - Android MediaStore library discovery
-- Android `MediaPlayer` playback and audio focus
+- AndroidX Media3 / ExoPlayer playback service
+- MediaSession, foreground notification and system transport controls
 - Native equaliser, dynamics, bass and loudness processing
-- Shared queue, playlist, library and player domain models
-- Local preference-backed playback and favourite state
+- Shared queue, playlist, provider, library and player domain models
+- Preference-backed player, playlist, favourite and Audio Lab state
 - Android SDK 36 with minimum SDK 26
+- GitHub Actions quality gate for tests, lint and debug APK assembly
 
-## Current status
+## Verified evidence
 
-The Android implementation is a substantial working prototype, not a public release. A debug build has been produced from the current source generation, while a fresh clean build still needs to be repeated against a restored Android SDK toolchain.
+- Clean Android build matrix completed successfully.
+- Eleven shared Android tests pass with zero failures.
+- Android lint completes with zero errors.
+- Shared iOS simulator logic compiles successfully.
+- Installed and visually inspected on a physical HONOR Android 15 device.
+- Foreground and background playback verified through the active Media3 session.
+- Playback position continued advancing after the app moved to the background.
+- System media metadata reported the correct track, artist and album.
 
-Playlist persistence is implemented in the domain layer but not yet connected to the active interface. Audio profiles, listening history and smart-mix behaviour need full persistence and integration. Automated tests are currently foundational rather than release-grade.
+## Current boundary
 
-The iOS target remains an early shell; shared production UI and native iOS playback are not presented as complete.
+Android is the production-focused implementation. The iOS target remains an early shell; native playback and shared production UI are not presented as complete.
 
-## Product boundary
+Apple Music and Spotify production connections are not claimed. The provider-neutral gateway, capability model and catalog merger exist, but real adapters require registered applications, approved redirect URIs, signing identities and secure token infrastructure.
 
-UNIFIED currently focuses on music stored on the device. It does not claim streaming-service integration, mesh synchronisation, cross-device playback or production-ready iOS support.
+## Next milestones
+
+- Measured gapless and crossfade playback.
+- Incremental library indexing and durable listening history.
+- Feature-owned navigation and state modules.
+- Native iOS playback and remote-command integration.
 
 ## Repository boundary
 
-The private source repository contains the working implementation. This public case study intentionally excludes source code, local media, generated applications, device identifiers, environment files, credentials and internal recovery material.
+The private repository contains the working implementation. This public case study intentionally excludes source code, local media, generated applications, device identifiers, environment files, credentials and internal recovery material.
 
 ---
 
