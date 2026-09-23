@@ -42,6 +42,12 @@ MediaStore changes now trigger automatic reconciliation. A new Library Vault exp
 
 This cold-start capture is from the installed `6.0-debug` build. The device-side atomic snapshot was 870 KB and declared all 3,795 tracks after process restart.
 
+## UNIFIED 7.0 — Collection DNA
+
+Version 7.0 turns the durable collection into an explainable intelligence surface. Collection DNA calculates total playtime, format distribution, artwork coverage, lossless media, recent additions, metadata gaps and likely duplicates entirely on-device.
+
+Six count-aware filters—All, Favorites, Downloaded, Lossless, Last 30 Days and Long Tracks—compose with sorting, Play All and Shuffle. Every reconciliation reports added, removed and refreshed items. Now Playing adds total remaining queue time and a functional sleep timer with four countdown presets plus stop-after-current-track behavior.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -65,9 +71,12 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - Android MediaStore discovery for large on-device libraries.
 - Atomic Library Vault snapshots with instant restoration and empty-scan protection.
 - Automatic MediaStore change observation and background reconciliation.
+- Collection DNA analysis, format distribution, artwork coverage, metadata-gap and duplicate-candidate reporting.
+- Six live count-aware library filters that compose with sorting and playback.
 - Media3/ExoPlayer foreground playback with a preloaded native queue, MediaSession, notification and lock-screen controls.
 - Durable current-track, position, shuffle, repeat and exact queue-order restoration using stable media identities.
 - Position-preserving queue editing, service-owned shuffle/repeat, native transition synchronisation, seeking and automatic completion handling.
+- Remaining queue-time awareness and a countdown/end-of-track sleep timer.
 - Persistent favourites and playlists with grouped artist and album views.
 - Durable on-device Taste Memory with play, early-skip and listened-time signals.
 - Explainable adaptive Smart Mix plus Recently Played and Most Played surfaces.
@@ -102,7 +111,7 @@ Local ownership and honest playback state come first. Streaming providers enter 
 ## Verified evidence
 
 - Clean Android build matrix completed successfully.
-- Twenty-two shared Android tests pass with zero failures, including snapshot fidelity, corruption rejection, empty-scan protection, history persistence, queue preloading, native transitions and background reconnection.
+- Twenty-six shared Android tests pass with zero failures, including collection analysis, smart filters, reconciliation deltas, sleep timing, snapshot fidelity, empty-scan protection, queue preloading and background reconnection.
 - Android lint completes with zero errors.
 - Shared iOS simulator logic compiles successfully.
 - Installed and visually inspected on a physical HONOR Android 15 device.
