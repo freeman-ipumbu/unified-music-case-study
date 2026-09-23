@@ -32,6 +32,16 @@ If playback advances while the interface is gone, relaunching reconnects to the 
 
 This is the installed `5.0-debug` build running against a 3,795-track on-device library on a physical Android 15 device.
 
+## UNIFIED 6.0 — Library Vault
+
+Version 6.0 fixes the collection-disappearance failure at the data boundary. The last healthy MediaStore index is encoded into a versioned snapshot and committed with Android atomic-file storage. Startup restores all 3,795 tracks before the platform scan completes; failed or transiently empty results keep that healthy snapshot visible instead of blanking the product.
+
+MediaStore changes now trigger automatic reconciliation. A new Library Vault experience exposes secured, syncing and protected states, index freshness and on-device storage. The same release tightens the product's control hierarchy, segmented navigation, action cards, grouped rows, borders and radius language.
+
+<img src="assets/unified-6-home.png" width="420" alt="UNIFIED 6.0 Library Vault showing 3,795 secured tracks on a physical Android device">
+
+This cold-start capture is from the installed `6.0-debug` build. The device-side atomic snapshot was 870 KB and declared all 3,795 tracks after process restart.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -53,6 +63,8 @@ Local ownership and honest playback state come first. Streaming providers enter 
 ## Product response
 
 - Android MediaStore discovery for large on-device libraries.
+- Atomic Library Vault snapshots with instant restoration and empty-scan protection.
+- Automatic MediaStore change observation and background reconciliation.
 - Media3/ExoPlayer foreground playback with a preloaded native queue, MediaSession, notification and lock-screen controls.
 - Durable current-track, position, shuffle, repeat and exact queue-order restoration using stable media identities.
 - Position-preserving queue editing, service-owned shuffle/repeat, native transition synchronisation, seeking and automatic completion handling.
@@ -90,7 +102,7 @@ Local ownership and honest playback state come first. Streaming providers enter 
 ## Verified evidence
 
 - Clean Android build matrix completed successfully.
-- Eighteen shared Android tests pass with zero failures, including history persistence, seek rejection, skip detection, queue preloading, native transitions and background reconnection.
+- Twenty-two shared Android tests pass with zero failures, including snapshot fidelity, corruption rejection, empty-scan protection, history persistence, queue preloading, native transitions and background reconnection.
 - Android lint completes with zero errors.
 - Shared iOS simulator logic compiles successfully.
 - Installed and visually inspected on a physical HONOR Android 15 device.
