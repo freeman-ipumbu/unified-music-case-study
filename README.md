@@ -22,6 +22,12 @@ Version 4.0 turns the dormant recommendation foundation into a local-first liste
 
 UNIFIED Mix now adapts from favourite, artist, album and recency signals. The system remains explainable and private: no listening history leaves the device, and provider integrations stay behind explicit capability boundaries.
 
+## UNIFIED 5.0 — Seamless Queue
+
+Version 5.0 moves the queue into Media3's native timeline. The complete playable queue is preloaded, track transitions are reflected back into shared product state, and shuffle plus repeat are owned by the playback service so system controls and the app stay coherent.
+
+If playback advances while the interface is gone, relaunching reconnects to the engine's actual active track instead of stale persisted metadata. Removing an upcoming track rebuilds the native queue without losing the current song, position or play state.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -43,9 +49,9 @@ Local ownership and honest playback state come first. Streaming providers enter 
 ## Product response
 
 - Android MediaStore discovery for large on-device libraries.
-- Media3/ExoPlayer foreground playback with MediaSession, notification and lock-screen controls.
+- Media3/ExoPlayer foreground playback with a preloaded native queue, MediaSession, notification and lock-screen controls.
 - Durable current-track, position, shuffle, repeat and exact queue-order restoration using stable media identities.
-- Queue editing, shuffle, repeat, seeking and automatic completion handling.
+- Position-preserving queue editing, service-owned shuffle/repeat, native transition synchronisation, seeking and automatic completion handling.
 - Persistent favourites and playlists with grouped artist and album views.
 - Durable on-device Taste Memory with play, early-skip and listened-time signals.
 - Explainable adaptive Smart Mix plus Recently Played and Most Played surfaces.
@@ -80,7 +86,7 @@ Local ownership and honest playback state come first. Streaming providers enter 
 ## Verified evidence
 
 - Clean Android build matrix completed successfully.
-- Fourteen shared Android tests pass with zero failures, including history codec, seek rejection and skip detection.
+- Eighteen shared Android tests pass with zero failures, including history persistence, seek rejection, skip detection, queue preloading, native transitions and background reconnection.
 - Android lint completes with zero errors.
 - Shared iOS simulator logic compiles successfully.
 - Installed and visually inspected on a physical HONOR Android 15 device.
@@ -96,7 +102,7 @@ Apple Music and Spotify production connections are not claimed. The provider-neu
 
 ## Next milestones
 
-- Measured gapless and crossfade playback.
+- Measured, configurable crossfade playback.
 - Incremental library indexing and missing-file recovery.
 - Feature-owned navigation and state modules.
 - Native iOS playback and remote-command integration.
