@@ -16,6 +16,12 @@ The 3.0 visual system moves away from generic neon glass toward a more ownable i
 
 These screens were captured from the installed `3.0-debug` build on a physical Android 15 device.
 
+## UNIFIED 4.0 — Taste Memory
+
+Version 4.0 turns the dormant recommendation foundation into a local-first listening intelligence system. It records credible starts, early skips and listened time on-device, restores that history across launches, and makes the result visible through a new Taste Memory dashboard plus Recently Played and Most Played shelves.
+
+UNIFIED Mix now adapts from favourite, artist, album and recency signals. The system remains explainable and private: no listening history leaves the device, and provider integrations stay behind explicit capability boundaries.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -41,7 +47,8 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - Durable current-track, position, shuffle, repeat and exact queue-order restoration using stable media identities.
 - Queue editing, shuffle, repeat, seeking and automatic completion handling.
 - Persistent favourites and playlists with grouped artist and album views.
-- Explainable Smart Mix and listening-intelligence foundations.
+- Durable on-device Taste Memory with play, early-skip and listened-time signals.
+- Explainable adaptive Smart Mix plus Recently Played and Most Played surfaces.
 - Equaliser, bass, loudness and dynamics controls through Audio Lab.
 - Audio-reactive spectrum and waveform visualisation.
 - A Compose interface spanning Home, Library, Search, Playlists, Now Playing and Audio Lab.
@@ -66,14 +73,14 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - MediaSession, foreground notification and system transport controls
 - Native equaliser, dynamics, bass and loudness processing
 - Shared queue, playlist, provider, library and player domain models
-- Preference-backed player, playlist, favourite and Audio Lab state
+- Preference-backed player, playlist, favourite, Audio Lab and listening-history state
 - Android SDK 36 with minimum SDK 26
 - GitHub Actions quality gate for tests, lint and debug APK assembly
 
 ## Verified evidence
 
 - Clean Android build matrix completed successfully.
-- Eleven shared Android tests pass with zero failures.
+- Fourteen shared Android tests pass with zero failures, including history codec, seek rejection and skip detection.
 - Android lint completes with zero errors.
 - Shared iOS simulator logic compiles successfully.
 - Installed and visually inspected on a physical HONOR Android 15 device.
@@ -90,7 +97,7 @@ Apple Music and Spotify production connections are not claimed. The provider-neu
 ## Next milestones
 
 - Measured gapless and crossfade playback.
-- Incremental library indexing and durable listening history.
+- Incremental library indexing and missing-file recovery.
 - Feature-owned navigation and state modules.
 - Native iOS playback and remote-command integration.
 
