@@ -48,6 +48,36 @@ Version 7.0 turns the durable collection into an explainable intelligence surfac
 
 Six count-aware filters—All, Favorites, Downloaded, Lossless, Last 30 Days and Long Tracks—compose with sorting, Play All and Shuffle. Every reconciliation reports added, removed and refreshed items. Now Playing adds total remaining queue time and a functional sleep timer with four countdown presets plus stop-after-current-track behavior.
 
+## UNIFIED 8.0 — Official Runnerz Music Player
+
+![UNIFIED × Runnerz official music player ecosystem](assets/unified-runnerz-player.svg)
+
+This is original ecosystem artwork for the 8.0 release. A current physical-device UI capture will replace or accompany it after the signed UNIFIED and Runnerz builds complete the documented handset round-trip gate; the device images above remain clearly versioned evidence from earlier releases.
+
+Version 8.0 turns UNIFIED into the official music layer of the Runnerz ecosystem. The visual system now speaks the same language as the running product and its merch: **route lime** (`#39FF88`), **trail forest** (`#07120B`), **warm white** (`#F4FAF6`) and **founder gold** (`#D6B45A`). The result is one recognisable Namibian identity across listening, movement and the authored UNIFIED × Runnerz catalogue artwork.
+
+### A music system built around how people move and listen
+
+**Session Studio** creates five one-tap sessions from the listener's own library and on-device history: Daily Flow, Rediscover, Fresh Rotation, Deep Focus and Favorite Radio. Its results are stable for the same inputs and deliberately space repeat artists. **Track Radio** can expand any selected song into a ranked, taste-aware queue of up to 50 tracks using its artist, album, favourites and recent-listening signals. Neither system uploads listening history.
+
+**Listening Universe** translates credible listening patterns into private progression rather than public engagement pressure. Nine persistent badges—including First Spark, Vault Keeper, Golden Ear, No-Skip Zone and Local Legend—show clear progress requirements and remain unlocked once earned. Five explainable archetypes—Pathfinder, Curator, Deep Diver, Sonic Purist and Artist Orbiter—reflect breadth, curation, listening depth, recording quality and artist focus. Levels and XP are calculated locally from plays, listening time, library depth, favourites and exploration.
+
+### Runnerz sessions and handoff
+
+Runnerz Mode builds private **30, 45, 60 or 90-minute** music arcs from the local collection. The selected tracks are artist-diversified and sequenced through warm-up, lock-in, tempo and finish-kick phases. Starting a session begins playback in UNIFIED, then hands only the session title, target duration and track count to an installed Runnerz production or field-test app; if neither package is available, Android falls back to the Runnerz website. Track identities and full listening history remain inside UNIFIED.
+
+The sender and matching Runnerz receiver compile against the same explicit Android contract. A complete signed, physical-device start/run/return test remains a release gate, so this case study does not describe the cross-app link as production-complete yet.
+
+### Rights-ready ShowTime Ambassador Channel
+
+The **ShowTime Radio** surface is reserved for Shadrac “ShowTime” Mavungu as a Runnerz ambassador channel. It activates when local track metadata matches the declared ShowTime identity; a match does not establish approval or distribution rights. UNIFIED 8.0 does **not** bundle ambassador audio or artwork, copy protected media, promise a remote stream or imply distribution rights; editorial assets and distributable audio remain subject to explicit artist and rights-holder approval.
+
+### Library Vault v2
+
+The durable library now uses a checksummed, two-generation recovery design. Every new primary snapshot binds its header, timestamp, track count and body to an integrity checksum. Before replacement, the current valid snapshot is preserved as a separate atomic last-good generation. Startup validates the primary first and reads the last-good backup only when recovery is required; truncated or altered version 2 data is rejected, and version 1 snapshots remain readable for migration.
+
+This release makes the ecosystem larger without weakening its boundary: local music, listening intelligence, achievements, run-session sequencing and Vault recovery remain on-device. Apple Music and Spotify production adapters still require registered applications, user authorisation and provider-approved infrastructure.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -70,6 +100,7 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 - Android MediaStore discovery for large on-device libraries.
 - Atomic Library Vault snapshots with instant restoration and empty-scan protection.
+- Checksummed two-generation Vault recovery with legacy-snapshot compatibility.
 - Automatic MediaStore change observation and background reconciliation.
 - Collection DNA analysis, format distribution, artwork coverage, metadata-gap and duplicate-candidate reporting.
 - Six live count-aware library filters that compose with sorting and playback.
@@ -80,6 +111,11 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - Persistent favourites and playlists with grouped artist and album views.
 - Durable on-device Taste Memory with play, early-skip and listened-time signals.
 - Explainable adaptive Smart Mix plus Recently Played and Most Played surfaces.
+- Session Studio with five local, history-aware listening modes.
+- Track Radio generated from a selected song and local taste signals.
+- Listening Universe levels, XP, five archetypes and nine persistent unlockable badges.
+- Duration-aware Runnerz music arcs with an explicit, minimal Android handoff.
+- Rights-ready ShowTime Radio discovery for matching local tracks, with editorial and distribution use still approval-gated.
 - Equaliser, bass, loudness and dynamics controls through Audio Lab.
 - Audio-reactive spectrum and waveform visualisation.
 - A Compose interface spanning Home, Library, Search, Playlists, Now Playing and Audio Lab.
@@ -90,10 +126,11 @@ Local ownership and honest playback state come first. Streaming providers enter 
 1. **Observe** — identify where local players fragment discovery, playback and organisation.
 2. **Frame** — treat the queue and current track as one durable product state.
 3. **Design** — build hierarchy around artwork, readable type, consistent controls and restrained motion.
-4. **Localise the identity** — derive warmth and atmosphere from Namibia without reducing the interface to literal motifs.
-5. **Build** — share domain and interface logic with Kotlin Multiplatform while keeping platform playback responsibilities explicit.
-6. **Evaluate** — verify permissions, persistence, background playback and system media controls on physical hardware.
-7. **Harden** — make automated tests, lint and reproducible builds release gates.
+4. **Connect the ecosystem** — use Runnerz colour, movement language and explicit app boundaries so the player feels native to the same product family.
+5. **Localise the identity** — derive warmth and atmosphere from Namibia without reducing the interface to literal motifs.
+6. **Build** — share domain and interface logic with Kotlin Multiplatform while keeping platform playback responsibilities explicit.
+7. **Evaluate** — verify permissions, persistence, background playback and system media controls on physical hardware.
+8. **Harden** — make automated tests, lint and reproducible builds release gates.
 
 ## Engineering overview
 
@@ -110,14 +147,15 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Verified evidence
 
-- Clean Android build matrix completed successfully.
-- Twenty-six shared Android tests pass with zero failures, including collection analysis, smart filters, reconciliation deltas, sleep timing, snapshot fidelity, empty-scan protection, queue preloading and background reconnection.
+- The complete UNIFIED 8.0 Android gate passed on 23 September 2026: 128 Gradle tasks covering shared logic and UI tests, app unit tests, lint and debug APK assembly.
+- All 39 executed shared test cases passed with zero failures or errors.
+- The shared test suite covers collection analysis, smart filters, reconciliation deltas, sleep timing, snapshot fidelity, empty-scan protection, queue preloading and background reconnection.
+- Version 8.0 adds test coverage for Vault tamper recovery, five Session Studio modes, durable badge unlocks, Runnerz sequencing and handoff data, and ambassador metadata matching.
 - Android lint completes with zero errors.
 - Shared iOS simulator logic compiles successfully.
-- Installed and visually inspected on a physical HONOR Android 15 device.
-- Foreground and background playback verified through the active Media3 session.
-- Playback position continued advancing after the app moved to the background.
-- System media metadata reported the correct track, artist and album.
+- Earlier versioned builds through 6.0 were installed and visually inspected on a physical HONOR Android 15 device; their captures are identified above.
+- On that device, foreground/background playback, advancing position and system media metadata were verified through the active Media3 session.
+- The 8.0 debug APK is built and checksummed, but has not yet been installed because the test handset is currently offline.
 
 ## Current boundary
 
@@ -125,11 +163,16 @@ Android is the production-focused implementation. The iOS target remains an earl
 
 Apple Music and Spotify production connections are not claimed. The provider-neutral gateway, capability model and catalog merger exist, but real adapters require registered applications, approved redirect URIs, signing identities and secure token infrastructure.
 
+The UNIFIED-to-Runnerz sender and receiver are implemented and compile in their respective Android variants. Signed-build physical-device round-trip validation is still required before calling that handoff production-ready. ShowTime Radio is a metadata-matched local activation surface, not proof of media rights, a bundled catalogue or a streaming service.
+
 ## Next milestones
 
 - Measured, configurable crossfade playback.
 - Incremental library indexing and missing-file recovery.
 - Feature-owned navigation and state modules.
+- Signed physical-device validation of the complete UNIFIED → Runnerz → UNIFIED session loop.
+- Consented run-state return without transferring full listening history between apps.
+- Ambassador editorial and media publication only after explicit rights approval.
 - Native iOS playback and remote-command integration.
 
 ## Repository boundary
