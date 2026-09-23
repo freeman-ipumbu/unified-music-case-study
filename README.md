@@ -28,6 +28,10 @@ Version 5.0 moves the queue into Media3's native timeline. The complete playable
 
 If playback advances while the interface is gone, relaunching reconnects to the engine's actual active track instead of stale persisted metadata. Removing an upcoming track rebuilds the native queue without losing the current song, position or play state.
 
+<img src="assets/unified-5-home.png" width="420" alt="UNIFIED 5.0 running on a physical Android device with Taste Memory and the 3,795-track local library">
+
+This is the installed `5.0-debug` build running against a 3,795-track on-device library on a physical Android 15 device.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
