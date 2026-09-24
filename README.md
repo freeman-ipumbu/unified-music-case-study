@@ -2,7 +2,7 @@
 
 ![UNIFIED Music](assets/unified-music.svg)
 
-**A local-first music system designed and engineered in Namibia—one coherent library, queue, player and audio-control experience.**
+**The official Runnerz music player—a local-first music system designed and engineered in Namibia around one coherent library, queue, player, movement and audio-control experience.**
 
 > This is a public product and engineering case study. Deployable source, device configuration, local media, build artefacts, credentials and private implementation details remain in a separate private repository.
 
@@ -96,6 +96,32 @@ The release replaces flat feature glass with **living surfaces**: dimensional lo
 
 ShowTime Radio now recognizes complete artist-credit segments including `ShowTime`, `SHOWTIME 837`, full-name credits and slash-separated collaborations while rejecting unrelated names such as “Showtime Orchestra.” The release handset contains **11 matching tracks**; those real local tracks lead the generated channel before taste-aware extensions. The artist-supplied Runnerz ambassador portrait is bundled for presentation, while audio stays in the listener’s own library. Playing a matched track can unlock **837 Frequency**, the tenth durable Listening Universe badge.
 
+## UNIFIED 10.0 — Creative Wave
+
+Creative Wave expands Runnerz Mode from one run-shaped playlist into seven explicit movement intents: **Walk, Recovery, Easy, Steady, Tempo, Intervals and Long Run**. Each intent has its own duration, familiarity, freshness and progression priorities. Suggestions are explainable from real favourites, plays, early skips, credible listening time and track duration; UNIFIED does not invent BPM analysis that has not happened.
+
+Seven offline **Namibia Weather Moods** let the listener frame a session as Cool Dawn, Coastal Mist, Clear Day, Desert Heat, Windy, Rain or Night Signal. They are manual creative cues, not live forecast claims. Time-aware Namibian greetings, Southern Hemisphere seasonal challenges and movement milestones bring local character into the system without collecting location.
+
+Every launched soundtrack creates a private **Afterglow** memory. Completed memories and unlocked milestones can become 1080 × 1350 Runnerz cards rendered on-device and shared through Android without exposing content URIs or full listening history. Collection DNA adds a weighted Library Health score, Listening Universe grows to fifteen durable badges, and Audio Lab adds four Transition Bloom profiles after Media3's native gapless handoff.
+
+## UNIFIED 11.0 — Velocity Engine
+
+Velocity Engine makes the movement soundtrack understandable before, during and after the run. **Pace Map** reveals the actual minutes, track count and intensity allocated to Warm Up, Lock In, Tempo and Finish Kick. A transparent **Run Readiness** score reflects duration fit, phase coverage and artist variety; it is a soundtrack-readiness signal, not a health claim. **Pace Brain** uses only private Afterglow history to suggest the next movement, including a recovery arc after harder sessions.
+
+| Velocity Home | Pace Map |
+|---|---|
+| <img src="assets/unified-11-home.jpg" width="360" alt="UNIFIED 11.0 Home showing Velocity Engine and the protected 3,795-track Library Vault"> | <img src="assets/unified-11-pace-map.jpg" width="360" alt="UNIFIED 11.0 Pace Map showing four soundtrack phases and Run Readiness"> |
+
+| Live Runnerz phase | Afterglow intelligence |
+|---|---|
+| <img src="assets/unified-11-live-runnerz.jpg" width="360" alt="UNIFIED 11.0 minimized player showing the live Runnerz Warm Up phase"> | <img src="assets/unified-11-afterglow.jpg" width="360" alt="UNIFIED 11.0 Afterglow intelligence and private soundtrack memories"> |
+
+The minimized player follows the active phase and can restore it from the latest unfinished memory after process recreation. Afterglow summarizes completed sessions, completed minutes, movement range and the listener's signature movement. Completion returns update this state in place: the URI is consumed once, duplicates are harmless and playback is not torn down by an Activity recreation.
+
+11.0 also targets the feel of a large real library. Search values, trigram candidates and sort variants are built lazily; exact substring queries use indexed candidates; identical MediaStore scans preserve list identity and avoid rewriting the Vault; change bursts are debounced; and intelligence plus Runnerz planning execute away from the UI dispatcher. Session planning now ranks the 3,795-track collection once per selection instead of twice.
+
+These four images are unedited captures from the installed `11.0-debug` build on the same physical HONOR Android 15 handset. The upgrade retained both Library Vault generations and every one of the **3,795 local tracks**.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -131,8 +157,9 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - Explainable adaptive Smart Mix plus Recently Played and Most Played surfaces.
 - Session Studio with five local, history-aware listening modes.
 - Track Radio generated from a selected song and local taste signals.
-- Listening Universe levels, XP, five archetypes and ten persistent unlockable badges, including 837 Frequency.
-- Duration-aware Runnerz music arcs with an explicit, minimal Android handoff.
+- Listening Universe levels, XP, five archetypes and fifteen persistent unlockable badges, including 837 Frequency.
+- Seven activity-aware Runnerz music arcs with Pace Map, Run Readiness, Pace Brain and an explicit, minimal Android handoff.
+- Private Afterglow memories, movement milestones, seasonal challenges and on-device share cards.
 - Complete-credit ShowTime Radio discovery with local-track-first queueing and a supplied ambassador portrait; audio distribution remains approval-gated.
 - Equaliser, bass, loudness and dynamics controls through Audio Lab.
 - Audio-reactive spectrum and waveform visualisation.
@@ -165,15 +192,14 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Verified evidence
 
-- The complete UNIFIED 9.0 Android gate passed on 24 September 2026: 128 Gradle tasks covering shared logic and UI tests, app unit tests, lint and debug APK assembly.
-- All 39 executed shared test cases passed with zero failures or errors.
-- The shared test suite covers collection analysis, smart filters, reconciliation deltas, sleep timing, snapshot fidelity, empty-scan protection, queue preloading and background reconnection.
-- Version 9.0 extends coverage with complete-credit ShowTime aliases, false-positive rejection, local-track-first radio ordering and the 837 Frequency unlock condition.
-- Android lint completes with zero errors.
-- Shared iOS simulator logic compiles successfully.
-- Versions through 9.0 were installed and visually inspected on a physical HONOR Android 15 device; the current release captures are identified above.
+- The complete UNIFIED 11.0 Android gate passed on 24 September 2026: 176 Gradle tasks covering shared logic and UI tests, app unit tests, lint, debug APK assembly and unsigned release assembly.
+- All 49 executed shared test cases passed with zero failures, errors or skips; Android lint completed with zero errors.
+- Coverage includes collection analysis, smart filters, reconciliation deltas, sleep timing, snapshot fidelity, empty-scan protection, indexed substring search, no-op scan identity, queue preloading, Velocity planning, Pace Brain recovery and durable phase restoration.
+- Shared iOS simulator logic compiles successfully; iOS product parity is not claimed.
+- Versions through 11.0 were installed and visually inspected on a physical HONOR Android 15 device.
 - On that device, foreground/background playback, advancing position and system media metadata were verified through the active Media3 session.
-- The 9.0 debug APK was installed in place as version code 10. Both Vault files retained 3,796 lines each—the version header plus 3,795 tracks—and the cold-launch inspection produced no UNIFIED crash or ANR signal.
+- The 11.0 debug APK was installed in place as version code 12. Both Vault files retained 3,796 lines each—the version header plus 3,795 tracks.
+- The browser handoff produced a real 14-track, 49-minute Tempo session from a 45-minute request. Its exact issued completion URI was returned and replayed twice; Android retained one top Activity and showed no recreation loop or flashing.
 
 ## Current boundary
 
@@ -181,15 +207,14 @@ Android is the production-focused implementation. The iOS target remains an earl
 
 Apple Music and Spotify production connections are not claimed. The provider-neutral gateway, capability model and catalog merger exist, but real adapters require registered applications, approved redirect URIs, signing identities and secure token infrastructure.
 
-The UNIFIED-to-Runnerz sender and receiver are implemented and compile in their respective Android variants. Signed-build physical-device round-trip validation is still required before calling that handoff production-ready. ShowTime Radio is a metadata-matched local activation surface, not proof of media rights, a bundled catalogue or a streaming service.
+The UNIFIED-to-Runnerz sender and return contract are implemented, and the exact browser-fallback round trip is physically verified. A final signed Runnerz-app round trip is still required before describing the native cross-app bridge as production-complete. ShowTime Radio is a metadata-matched local activation surface, not proof of media rights, a bundled catalogue or a streaming service.
 
 ## Next milestones
 
-- Measured, configurable crossfade playback.
-- Incremental library indexing and missing-file recovery.
+- Measured true overlapping crossfade, only if device testing shows it improves on native seamless playback and Transition Bloom.
+- Room-backed incremental indexing only if physical performance measurements justify the added database complexity.
 - Feature-owned navigation and state modules.
 - Signed physical-device validation of the complete UNIFIED → Runnerz → UNIFIED session loop.
-- Consented run-state return without transferring full listening history between apps.
 - Ambassador editorial and media publication only after explicit rights approval.
 - Native iOS playback and remote-command integration.
 
