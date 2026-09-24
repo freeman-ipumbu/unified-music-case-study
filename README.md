@@ -52,7 +52,7 @@ Six count-aware filters—All, Favorites, Downloaded, Lossless, Last 30 Days and
 
 ![UNIFIED × Runnerz official music player ecosystem](assets/unified-runnerz-player.svg)
 
-This is original ecosystem artwork for the 8.0 release. A current physical-device UI capture will replace or accompany it after the signed UNIFIED and Runnerz builds complete the documented handset round-trip gate; the device images above remain clearly versioned evidence from earlier releases.
+This is original ecosystem artwork for the 8.0 release. UNIFIED 9.0 below adds current physical-device evidence while the signed UNIFIED-to-Runnerz round-trip remains a separately stated integration gate.
 
 Version 8.0 turns UNIFIED into the official music layer of the Runnerz ecosystem. The visual system now speaks the same language as the running product and its merch: **route lime** (`#39FF88`), **trail forest** (`#07120B`), **warm white** (`#F4FAF6`) and **founder gold** (`#D6B45A`). The result is one recognisable Namibian identity across listening, movement and the authored UNIFIED × Runnerz catalogue artwork.
 
@@ -77,6 +77,24 @@ The **ShowTime Radio** surface is reserved for Shadrac “ShowTime” Mavungu as
 The durable library now uses a checksummed, two-generation recovery design. Every new primary snapshot binds its header, timestamp, track count and body to an integrity checksum. Before replacement, the current valid snapshot is preserved as a separate atomic last-good generation. Startup validates the primary first and reads the last-good backup only when recovery is required; truncated or altered version 2 data is rejected, and version 1 snapshots remain readable for migration.
 
 This release makes the ecosystem larger without weakening its boundary: local music, listening intelligence, achievements, run-session sequencing and Vault recovery remain on-device. Apple Music and Spotify production adapters still require registered applications, user authorisation and provider-approved infrastructure.
+
+## UNIFIED 9.0 — Night Signal
+
+Version 9.0 gives the official Runnerz music player its own flagship identity inside the ecosystem. The new **Signal Loop** mark joins a route-shaped U, music pulse and orbiting signal; an animated topographic field, moving beacon and spectrum-aware light now carry that identity through Home, Now Playing, navigation and the feature surfaces.
+
+| Night Signal Home | Now Playing |
+|---|---|
+| <img src="assets/unified-9-home.jpg" width="360" alt="UNIFIED 9.0 Night Signal Home showing 3,795 tracks secured in Library Vault"> | <img src="assets/unified-9-now-playing.jpg" width="360" alt="UNIFIED 9.0 Now Playing showing the Signal Loop artwork fallback, waveform and seamless queue"> |
+
+| Listening Universe | Runnerz + ShowTime Radio |
+|---|---|
+| <img src="assets/unified-9-listening-universe.jpg" width="360" alt="UNIFIED 9.0 Listening Universe with a level, XP and persistent badges"> | <img src="assets/unified-9-runnerz-showtime.jpg" width="360" alt="UNIFIED 9.0 Runnerz Mode and ShowTime Radio with eleven local matches"> |
+
+These are real captures from the installed `9.0-debug` build on an HONOR Android 15 handset. The in-place upgrade retained both Library Vault generations and all **3,795 local tracks**—no uninstall, destructive reset or manual rescan was required.
+
+The release replaces flat feature glass with **living surfaces**: dimensional lower plates, refracted edges and restrained content-aware bloom. The collapsed player becomes a signature destination with designed fallback artwork, live or held signal state, a luminous progress beacon and sculpted transport controls. Missing or stale MediaStore artwork now reveals the product’s own Signal Loop treatment instead of an empty tile.
+
+ShowTime Radio now recognizes complete artist-credit segments including `ShowTime`, `SHOWTIME 837`, full-name credits and slash-separated collaborations while rejecting unrelated names such as “Showtime Orchestra.” The release handset contains **11 matching tracks**; those real local tracks lead the generated channel before taste-aware extensions. The artist-supplied Runnerz ambassador portrait is bundled for presentation, while audio stays in the listener’s own library. Playing a matched track can unlock **837 Frequency**, the tenth durable Listening Universe badge.
 
 ## My role
 
@@ -113,9 +131,9 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - Explainable adaptive Smart Mix plus Recently Played and Most Played surfaces.
 - Session Studio with five local, history-aware listening modes.
 - Track Radio generated from a selected song and local taste signals.
-- Listening Universe levels, XP, five archetypes and nine persistent unlockable badges.
+- Listening Universe levels, XP, five archetypes and ten persistent unlockable badges, including 837 Frequency.
 - Duration-aware Runnerz music arcs with an explicit, minimal Android handoff.
-- Rights-ready ShowTime Radio discovery for matching local tracks, with editorial and distribution use still approval-gated.
+- Complete-credit ShowTime Radio discovery with local-track-first queueing and a supplied ambassador portrait; audio distribution remains approval-gated.
 - Equaliser, bass, loudness and dynamics controls through Audio Lab.
 - Audio-reactive spectrum and waveform visualisation.
 - A Compose interface spanning Home, Library, Search, Playlists, Now Playing and Audio Lab.
@@ -147,15 +165,15 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Verified evidence
 
-- The complete UNIFIED 8.0 Android gate passed on 23 September 2026: 128 Gradle tasks covering shared logic and UI tests, app unit tests, lint and debug APK assembly.
+- The complete UNIFIED 9.0 Android gate passed on 24 September 2026: 128 Gradle tasks covering shared logic and UI tests, app unit tests, lint and debug APK assembly.
 - All 39 executed shared test cases passed with zero failures or errors.
 - The shared test suite covers collection analysis, smart filters, reconciliation deltas, sleep timing, snapshot fidelity, empty-scan protection, queue preloading and background reconnection.
-- Version 8.0 adds test coverage for Vault tamper recovery, five Session Studio modes, durable badge unlocks, Runnerz sequencing and handoff data, and ambassador metadata matching.
+- Version 9.0 extends coverage with complete-credit ShowTime aliases, false-positive rejection, local-track-first radio ordering and the 837 Frequency unlock condition.
 - Android lint completes with zero errors.
 - Shared iOS simulator logic compiles successfully.
-- Earlier versioned builds through 6.0 were installed and visually inspected on a physical HONOR Android 15 device; their captures are identified above.
+- Versions through 9.0 were installed and visually inspected on a physical HONOR Android 15 device; the current release captures are identified above.
 - On that device, foreground/background playback, advancing position and system media metadata were verified through the active Media3 session.
-- The 8.0 debug APK is built and checksummed, but has not yet been installed because the test handset is currently offline.
+- The 9.0 debug APK was installed in place as version code 10. Both Vault files retained 3,796 lines each—the version header plus 3,795 tracks—and the cold-launch inspection produced no UNIFIED crash or ANR signal.
 
 ## Current boundary
 
