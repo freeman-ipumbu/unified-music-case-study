@@ -2,7 +2,7 @@
 
 ![UNIFIED Music](assets/unified-music.svg)
 
-**The official Runnerz music player—a local-first music system designed and engineered in Namibia around one coherent library, queue, player, movement and audio-control experience.**
+**The official Runnerz music player—a local-first music system designed and engineered in Namibia around one coherent library, queue, player, movement, listening-intelligence and audio-control experience.**
 
 > This is a public product and engineering case study. Deployable source, device configuration, local media, build artefacts, credentials and private implementation details remain in a separate private repository.
 
@@ -122,6 +122,38 @@ The minimized player follows the active phase and can restore it from the latest
 
 These four images are unedited captures from the installed `11.0-debug` build on the same physical HONOR Android 15 handset. The upgrade retained both Library Vault generations and every one of the **3,795 local tracks**.
 
+## UNIFIED 12.0 — Sonic Atlas
+
+Sonic Atlas turns the local Library Vault into five deterministic orbits: **Your Gravity, Heartline, Lost Signals, New Light and Deep Space**. Each map is explainable from local metadata, favourites and private listening history. Five time-aware Daily Signals and four Smart Playlist Studio rules turn those orbits into playable queues without inventing genre, mood, key or BPM.
+
+**Acoustic Truth** can decode a bounded 24-second PCM sample from the exact local file already being played. It reports measured loudness and energy, while tempo is published only when onset confidence clears the threshold; uncertain tempo remains visibly `OPEN`. Audio bytes are neither uploaded nor written by UNIFIED. The cached Soundprint contains a track identifier and measurements, not title, artist, album or file URI.
+
+Listening DNA summarizes credible minutes, explored tracks and artists, replay behaviour, held-signal percentage and rediscovery candidates. Its optional 1080 × 1350 share card contains aggregate statistics only. Listening Universe grows to twenty durable badges.
+
+## UNIFIED 13.0 — Flow State
+
+Flow State turns **intent plus available time** into an explainable listening arc. Ascend, Steady Current, Deep Focus, Afterglow and Unknown Territory rank the listener's own collection using favourites, credible plays, early skips, freshness, duration and discovery history. A 20, 40, 60 or 90-minute selection becomes an artist-diversified **Ignition, Cruise, Lift and Arrival** sequence.
+
+Known Soundprints can shape a genuine energy contour without excluding the rest of the library. Unmapped tracks stay visibly `OPEN`, and Soundprint Lab analyses at most eight user-requested queued files per pass. Flow and Runnerz stage context remain visible through Home, Now Playing and the signature minimized player. Five acoustic-progression badges bring Listening Universe to twenty-five unlockables.
+
+| Launch identity | Library Vault + Home |
+|---|---|
+| <img src="assets/unified-13-splash.png" width="360" alt="UNIFIED 13.0 Signal Loop launch identity on a physical Android handset"> | <img src="assets/unified-13-home.png" width="360" alt="UNIFIED 13.0 Home showing the protected 3,795-track Library Vault"> |
+
+| Flow State | Now Playing |
+|---|---|
+| <img src="assets/unified-13-flow.png" width="360" alt="UNIFIED 13.0 Flow State intent, duration and acoustic-evidence controls"> | <img src="assets/unified-13-now-playing.png" width="360" alt="UNIFIED 13.0 Now Playing with primary seek and transport hierarchy"> |
+
+These are unedited captures from the installed `13.0-debug` build on the Android 15 release handset. The in-place upgrade retained all **3,795 tracks** in Library Vault.
+
+## UNIFIED 14.0 — Signal Journal
+
+Signal Journal adds a private daily ritual without turning listening into public surveillance. Credible track starts, played-time intervals, skips and explicitly launched Runnerz soundtracks are reduced into bounded daily records stored on-device. The journal keeps at most 120 days and 64 unique track identifiers per day; it does not add titles, artists, albums, file locations or playback positions to that record.
+
+Four missions advance only from real evidence: play three different tracks, listen for twenty credible minutes, move through three known artists and start one Runnerz soundtrack. A seven-day pulse exposes active days, minutes, track breadth, artist breadth, current streak, best streak and perfect days. Five new badges—**Journal Spark, Three-Day Current, Seven-Day Signal, Mission Control and Momentum 30**—bring Listening Universe to thirty durable unlockables.
+
+The on-device Signal Receipt contains only aggregate pulse, streak, minute, track and artist counts. It never includes a track identifier, title, artist, album or local URI. The complete 14.0 software gate is green; a physical-device 14.0 capture will be added only after the in-place installation is directly verified.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -157,7 +189,10 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - Explainable adaptive Smart Mix plus Recently Played and Most Played surfaces.
 - Session Studio with five local, history-aware listening modes.
 - Track Radio generated from a selected song and local taste signals.
-- Listening Universe levels, XP, five archetypes and fifteen persistent unlockable badges, including 837 Frequency.
+- Listening Universe levels, XP, five archetypes and thirty persistent unlockable badges, including 837 Frequency and five Signal Journal milestones.
+- Five-orbit Sonic Atlas, Daily Signals, Smart Playlist Studio and metadata-minimizing Listening DNA cards.
+- Confidence-gated local Soundprints plus Flow State's five intents, four time targets and four-stage queues.
+- A bounded private Signal Journal with four evidence-based missions, seven-day pulse and aggregate-only Signal Receipts.
 - Seven activity-aware Runnerz music arcs with Pace Map, Run Readiness, Pace Brain and an explicit, minimal Android handoff.
 - Private Afterglow memories, movement milestones, seasonal challenges and on-device share cards.
 - Complete-credit ShowTime Radio discovery with local-track-first queueing and a supplied ambassador portrait; audio distribution remains approval-gated.
@@ -192,11 +227,11 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Verified evidence
 
-- The complete UNIFIED 11.0 Android gate passed on 24 September 2026: 176 Gradle tasks covering shared logic and UI tests, app unit tests, lint, debug APK assembly and unsigned release assembly.
-- All 49 executed shared test cases passed with zero failures, errors or skips; Android lint completed with zero errors.
-- Coverage includes collection analysis, smart filters, reconciliation deltas, sleep timing, snapshot fidelity, empty-scan protection, indexed substring search, no-op scan identity, queue preloading, Velocity planning, Pace Brain recovery and durable phase restoration.
+- The complete UNIFIED 14.0 Android gate passed on 25 September 2026: shared logic and UI tests, app unit-test task, lint, debug APK assembly and unsigned release assembly.
+- All 60 executed shared test cases passed with zero failures, errors or skips; Android lint completed successfully.
+- Coverage now includes collection analysis, smart filters, reconciliation, snapshot recovery, indexed search, queue preloading, Velocity planning, Pace Brain, Sonic Atlas, Flow State, Signal Journal codec fidelity, real daily evidence, privacy-safe share output and all five Journal badge thresholds.
 - Shared iOS simulator logic compiles successfully; iOS product parity is not claimed.
-- Versions through 11.0 were installed and visually inspected on a physical HONOR Android 15 device.
+- Versions through 13.0 were installed and visually inspected on a physical Android 15 release handset; 14.0 physical installation is deliberately not claimed yet.
 - On that device, foreground/background playback, advancing position and system media metadata were verified through the active Media3 session.
 - The 11.0 debug APK was installed in place as version code 12. Both Vault files retained 3,796 lines each—the version header plus 3,795 tracks.
 - The browser handoff produced a real 14-track, 49-minute Tempo session from a 45-minute request. Its exact issued completion URI was returned and replayed twice; Android retained one top Activity and showed no recreation loop or flashing.
@@ -217,6 +252,7 @@ The UNIFIED-to-Runnerz sender and return contract are implemented, and the exact
 - Signed physical-device validation of the complete UNIFIED → Runnerz → UNIFIED session loop.
 - Ambassador editorial and media publication only after explicit rights approval.
 - Native iOS playback and remote-command integration.
+- Physical 14.0 in-place verification and an unedited Signal Journal capture.
 
 ## Repository boundary
 
