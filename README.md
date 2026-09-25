@@ -152,7 +152,13 @@ Signal Journal adds a private daily ritual without turning listening into public
 
 Four missions advance only from real evidence: play three different tracks, listen for twenty credible minutes, move through three known artists and start one Runnerz soundtrack. A seven-day pulse exposes active days, minutes, track breadth, artist breadth, current streak, best streak and perfect days. Five new badges—**Journal Spark, Three-Day Current, Seven-Day Signal, Mission Control and Momentum 30**—bring Listening Universe to thirty durable unlockables.
 
-The on-device Signal Receipt contains only aggregate pulse, streak, minute, track and artist counts. It never includes a track identifier, title, artist, album or local URI. The complete 14.0 software gate is green; a physical-device 14.0 capture will be added only after the in-place installation is directly verified.
+The on-device Signal Receipt contains only aggregate pulse, streak, minute, track and artist counts. It never includes a track identifier, title, artist, album or local URI.
+
+| Signal Journal | Daily missions + Share Pulse |
+|---|---|
+| <img src="assets/unified-14-signal-journal.png" width="360" alt="UNIFIED 14.0 Signal Journal on the physical Android 15 release handset"> | <img src="assets/unified-14-missions.png" width="360" alt="UNIFIED 14.0 daily missions and privacy-safe Share Pulse action"> |
+
+These are unedited captures from the installed `14.0-debug` build. The in-place upgrade preserved both Vault generations and all **3,795 tracks**. After one real playback observation and a forced process restart, the Journal restored one current day, one track, one known artist and the correct mission progress. The external Android share sheet rendered a verified 1080 × 1350 Signal Receipt.
 
 ## My role
 
@@ -231,7 +237,8 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - All 60 executed shared test cases passed with zero failures, errors or skips; Android lint completed successfully.
 - Coverage now includes collection analysis, smart filters, reconciliation, snapshot recovery, indexed search, queue preloading, Velocity planning, Pace Brain, Sonic Atlas, Flow State, Signal Journal codec fidelity, real daily evidence, privacy-safe share output and all five Journal badge thresholds.
 - Shared iOS simulator logic compiles successfully; iOS product parity is not claimed.
-- Versions through 13.0 were installed and visually inspected on a physical Android 15 release handset; 14.0 physical installation is deliberately not claimed yet.
+- Versions through 14.0 were installed and visually inspected on a physical Android 15 release handset.
+- The 14.0 in-place upgrade retained both 3,795-track Vault generations with an unchanged primary checksum; version code 15, cold launch, playback-driven Journal persistence and the real external share sheet were directly verified.
 - On that device, foreground/background playback, advancing position and system media metadata were verified through the active Media3 session.
 - The 11.0 debug APK was installed in place as version code 12. Both Vault files retained 3,796 lines each—the version header plus 3,795 tracks.
 - The browser handoff produced a real 14-track, 49-minute Tempo session from a 45-minute request. Its exact issued completion URI was returned and replayed twice; Android retained one top Activity and showed no recreation loop or flashing.
@@ -252,7 +259,6 @@ The UNIFIED-to-Runnerz sender and return contract are implemented, and the exact
 - Signed physical-device validation of the complete UNIFIED → Runnerz → UNIFIED session loop.
 - Ambassador editorial and media publication only after explicit rights approval.
 - Native iOS playback and remote-command integration.
-- Physical 14.0 in-place verification and an unedited Signal Journal capture.
 
 ## Repository boundary
 
