@@ -160,6 +160,24 @@ The on-device Signal Receipt contains only aggregate pulse, streak, minute, trac
 
 These are unedited captures from the installed `14.0-debug` build. The in-place upgrade preserved both Vault generations and all **3,795 tracks**. After one real playback observation and a forced process restart, the Journal restored one current day, one track, one known artist and the correct mission progress. The external Android share sheet rendered a verified 1080 × 1350 Signal Receipt.
 
+## UNIFIED 15.0 — Momentum Engine
+
+Momentum Engine turns the private Journal into a real **28-day Listening Season**. Each day is reduced to an explainable strength signal from credible listening time, unique local tracks and explicitly launched Runnerz soundtracks. The current window is compared only with the preceding 28 days; without that evidence, the product says `BASELINE FORMING` instead of inventing a trend.
+
+Daily track, minute and artist missions become adaptive after three prior active days. Targets use the median of only the preceding 28 days, stay within deliberate humane bounds, and are recalculated separately for each historical date so later listening cannot rewrite an earlier target. The Runnerz mission still requires one real soundtrack start.
+
+The new **Next Move** is action rather than decoration: an artist-diversified queue of at most thirty tracks that are resolved against the live Library Vault before Media3 playback begins. It uses private favourites and listening history without claiming unmeasured genre, mood, BPM, fitness performance or provider access. Five earned badges—**Momentum Rising, Pulse Peak, Season Shaper, Perfect Rhythm and Runnerz Relay**—bring Listening Universe to thirty-five durable unlockables.
+
+| 28-day Listening Season | Playable Next Move |
+|---|---|
+| <img src="assets/unified-15-momentum-season.png" width="360" alt="UNIFIED 15.0 Momentum Engine after a forced process restart on Android 15"> | <img src="assets/unified-15-next-move.png" width="360" alt="UNIFIED 15.0 playable thirty-track Next Move and aggregate-only Share Season action"> |
+
+| Aggregate-only Season card |
+|---|
+| <img src="assets/unified-15-season-card.png" width="360" alt="UNIFIED 15.0 privacy-safe 28-day Listening Season share card"> |
+
+These are real outputs from the installed `15.0-debug` build on the Android 15 release handset. The in-place upgrade retained both Vault generations and all **3,795 tracks** with the primary checksum unchanged. Next Move reached Android's `PLAYING` state with a real thirty-track Media3 queue; after pausing, force-stopping and cold-launching the app, the Season retained one active day, one credible minute and the restored track. The external Honor share sheet rendered the shown 1080 × 1350 RGBA card.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -195,10 +213,11 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - Explainable adaptive Smart Mix plus Recently Played and Most Played surfaces.
 - Session Studio with five local, history-aware listening modes.
 - Track Radio generated from a selected song and local taste signals.
-- Listening Universe levels, XP, five archetypes and thirty persistent unlockable badges, including 837 Frequency and five Signal Journal milestones.
+- Listening Universe levels, XP, five archetypes and thirty-five persistent unlockable badges, including 837 Frequency, five Signal Journal milestones and five Momentum Engine achievements.
 - Five-orbit Sonic Atlas, Daily Signals, Smart Playlist Studio and metadata-minimizing Listening DNA cards.
 - Confidence-gated local Soundprints plus Flow State's five intents, four time targets and four-stage queues.
-- A bounded private Signal Journal with four evidence-based missions, seven-day pulse and aggregate-only Signal Receipts.
+- A bounded private Signal Journal with four adaptive evidence-based missions, seven-day pulse and aggregate-only Signal Receipts.
+- A local 28-day Listening Season with honest previous-window comparison and a playable, thirty-track maximum Next Move.
 - Seven activity-aware Runnerz music arcs with Pace Map, Run Readiness, Pace Brain and an explicit, minimal Android handoff.
 - Private Afterglow memories, movement milestones, seasonal challenges and on-device share cards.
 - Complete-credit ShowTime Radio discovery with local-track-first queueing and a supplied ambassador portrait; audio distribution remains approval-gated.
@@ -233,12 +252,12 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Verified evidence
 
-- The complete UNIFIED 14.0 Android gate passed on 25 September 2026: shared logic and UI tests, app unit-test task, lint, debug APK assembly and unsigned release assembly.
-- All 60 executed shared test cases passed with zero failures, errors or skips; Android lint completed successfully.
-- Coverage now includes collection analysis, smart filters, reconciliation, snapshot recovery, indexed search, queue preloading, Velocity planning, Pace Brain, Sonic Atlas, Flow State, Signal Journal codec fidelity, real daily evidence, privacy-safe share output and all five Journal badge thresholds.
+- The complete UNIFIED 15.0 Android gate passed on 25 September 2026: shared logic and UI tests, app unit-test task, lint, debug APK assembly and unsigned release assembly.
+- All 63 executed shared test cases passed with zero failures, errors or skips; Android lint completed successfully.
+- Coverage now includes collection analysis, smart filters, reconciliation, snapshot recovery, indexed search, queue preloading, Velocity planning, Pace Brain, Sonic Atlas, Flow State, adaptive Signal Journal targets, real 28-day season comparison, diversified Next Move validity, metadata-minimizing share output and all five Momentum badge thresholds.
 - Shared iOS simulator logic compiles successfully; iOS product parity is not claimed.
-- Versions through 14.0 were installed and visually inspected on a physical Android 15 release handset.
-- The 14.0 in-place upgrade retained both 3,795-track Vault generations with an unchanged primary checksum; version code 15, cold launch, playback-driven Journal persistence and the real external share sheet were directly verified.
+- Versions through 15.0 were installed and visually inspected on a physical Android 15 release handset.
+- The 15.0 in-place upgrade retained both 3,795-track Vault generations with an unchanged primary checksum; version code 16, real thirty-track playback, forced-restart Season persistence and the external 1080 × 1350 Season-card path were directly verified.
 - On that device, foreground/background playback, advancing position and system media metadata were verified through the active Media3 session.
 - The 11.0 debug APK was installed in place as version code 12. Both Vault files retained 3,796 lines each—the version header plus 3,795 tracks.
 - The browser handoff produced a real 14-track, 49-minute Tempo session from a 45-minute request. Its exact issued completion URI was returned and replayed twice; Android retained one top Activity and showed no recreation loop or flashing.
