@@ -1,6 +1,6 @@
 # UNIFIED Music — Kotlin Multiplatform Case Study
 
-![UNIFIED Music](assets/unified-music.svg)
+[![UNIFIED 17.0 Sonic Recall — the official Runnerz music player](assets/unified-17-repository-cover.png)](#unified-170--sonic-recall)
 
 **The official Runnerz music player—a local-first music system designed and engineered in Namibia around one coherent library, queue, player, movement, listening-intelligence and audio-control experience.**
 
@@ -196,6 +196,18 @@ The new **Source Truth** surface connects audio control to UNIFIED's real local 
 
 These are real captures from the installed `16.0-debug` build. The in-place upgrade retained the original install identity and all **3,795 tracks** with the primary Vault checksum unchanged. The complete release gate passed **68 shared tests**, Android lint with zero errors, debug and unsigned-release assembly, and shared iOS compilation. Physical QA also proved that a vertical swipe beginning inside the graph left the full audio-preference checksum unchanged.
 
+## UNIFIED 17.0 — Sonic Recall
+
+Sonic Recall makes the complete sound signature contextual while leaving the listener visibly in control. One tap can bind the current EQ, preamp, bass and loudness state to the current **track**, **album** or **artist**. Resolution is deterministic—track before album before artist—and the active card names exactly which layer is driving. Automation is opt-in, unmatched music keeps the durable manual baseline, and any manual DSP edit pauses Recall immediately.
+
+**Level Compass** adds a deliberately honest measured layer. It compares the current bounded sample RMS with the median of valid Soundprints already decoded from the same on-device library. Advice is capped to ±4 dB; the protective action withholds positive gain because RMS cannot establish peak headroom and reserves space for active EQ boosts. It is explicitly not presented as LUFS, ReplayGain or mastering analysis.
+
+| Sonic Recall active | Recall + Level Compass |
+|---|---|
+| <img src="assets/unified-17-sonic-recall.png" width="360" alt="UNIFIED 17.0 track-scoped Sonic Recall memory active on the physical Android handset"> | <img src="assets/unified-17-level-compass.png" width="360" alt="UNIFIED 17.0 Sonic Recall and personal-library RMS Level Compass on the physical Android handset"> |
+
+These are unedited captures from the installed `17.0-debug` build on the same HONOR Android 15 handset. The in-place upgrade retained the original install identity, exact Vault checksum and all **3,795 tracks**. A real track rule survived a forced process stop and cold launch, returned as `TRACK MEMORY IS DRIVING`, and was then removed; Recall finished in `MANUAL` with zero QA rules and the listener's original flat bypassed sound intact.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -240,6 +252,8 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - Private Afterglow memories, movement milestones, seasonal challenges and on-device share cards.
 - Complete-credit ShowTime Radio discovery with local-track-first queueing and a supplied ambassador portrait; audio distribution remains approval-gated.
 - Graph-led ten-band Sonic Forge with semantic frequency zones, half-decibel focus controls, three durable Signature profiles, temporary A/B auditioning and honest EQ-only headroom guidance.
+- Opt-in track, album and artist Sonic Recall memories with deterministic specificity, visible active context, manual takeover and one-tap removal.
+- Personal-library Level Compass based on measured local sample-RMS median, bounded advice and non-positive protective alignment.
 - Differential native DSP updates, coalesced continuous-edit persistence, bass reinforcement and loudness lift.
 - Audio-reactive spectrum and waveform visualisation.
 - A Compose interface spanning Home, Library, Search, Playlists, Now Playing and Audio Lab.
@@ -271,11 +285,12 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Verified evidence
 
-- The complete UNIFIED 16.0 gate passed on 25 September 2026: shared logic and UI tests, app unit-test task, Android lint, debug and unsigned-release assembly, and shared iOS compilation.
-- All 68 executed shared test cases passed with zero failures, errors or skips; Android lint completed with zero errors.
-- Coverage now includes collection analysis, smart filters, reconciliation, snapshot recovery, indexed search, queue preloading, Velocity planning, Pace Brain, Sonic Atlas, Flow State, adaptive Signal Journal targets, real 28-day season comparison, diversified Next Move validity, profile-codec round trips, malformed-profile rejection, non-finite DSP sanitation, preset recognition and Headroom Guardian behaviour.
+- The complete UNIFIED 17.0 gate passed on 25 September 2026: shared logic and UI compilation/tests, app unit-test task, Android lint, debug and unsigned-release assembly, and shared iOS compilation.
+- All 71 executed shared test cases passed with zero failures; Android lint completed with zero errors.
+- Coverage now includes collection analysis, smart filters, reconciliation, snapshot recovery, indexed search, queue preloading, Velocity planning, Pace Brain, Sonic Atlas, Flow State, adaptive Signal Journal targets, real 28-day season comparison, diversified Next Move validity, profile and Recall codec round trips, Recall priority and replacement, unknown-context rejection, RMS median alignment, non-finite DSP sanitation, preset recognition and Headroom Guardian behaviour.
 - Shared iOS simulator logic compiles successfully; iOS product parity is not claimed.
-- Versions through 16.0 were installed and visually inspected on a physical Android 15 release handset.
+- Versions through 17.0 were installed and visually inspected on a physical Android 15 release handset.
+- The 17.0 in-place upgrade retained version history, all 3,795 Vault tracks and the exact primary checksum; version code 18, a forced-restart Recall rule and complete post-QA cleanup were directly verified.
 - The 16.0 in-place upgrade retained the original install identity and all 3,795 Vault tracks with the primary checksum unchanged; version code 17, real Source Truth output and graph-scroll mutation protection were directly verified.
 - The 15.0 in-place upgrade retained both 3,795-track Vault generations with an unchanged primary checksum; version code 16, real thirty-track playback, forced-restart Season persistence and the external 1080 × 1350 Season-card path were directly verified.
 - On that device, foreground/background playback, advancing position and system media metadata were verified through the active Media3 session.
