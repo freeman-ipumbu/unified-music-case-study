@@ -178,6 +178,24 @@ The new **Next Move** is action rather than decoration: an artist-diversified qu
 
 These are real outputs from the installed `15.0-debug` build on the Android 15 release handset. The in-place upgrade retained both Vault generations and all **3,795 tracks** with the primary checksum unchanged. Next Move reached Android's `PLAYING` state with a real thirty-track Media3 queue; after pausing, force-stopping and cold-launching the app, the Season retained one active day, one credible minute and the restored track. The external Honor share sheet rendered the shown 1080 × 1350 RGBA card.
 
+## UNIFIED 16.0 — Sonic Forge
+
+Sonic Forge turns the former fixed Audio Lab into a responsive phone-first sound workspace. A listener can shape the complete ten-band curve directly after an intentional press-and-hold, select semantic zones from **Sub** and **Bass** through **Presence**, **Brilliance** and **Air**, then refine the focused band in half-decibel steps. Ordinary graph swipes remain page navigation, preventing accidental EQ changes.
+
+Three durable **Signature** slots preserve the complete EQ, preamp, bass and loudness state on-device, with capture, load, overwrite and clear controls. A session-scoped A/B slot supports reversible comparisons. Factory presets include miniature curve previews and stay recognisable after safe preamp compensation.
+
+The new **Source Truth** surface connects audio control to UNIFIED's real local Soundprint. It shows bounded-file measurements—tempo only above the confidence gate, energy, RMS and onset confidence—without uploading audio or inventing an analysis. **Headroom Guardian** estimates only active EQ boost plus preamp and can apply conservative compensation in one action; native device-dependent BassBoost and LoudnessEnhancer output is never presented as measured clipping data.
+
+| Sonic Forge + Source Truth | Ten-band curve + Headroom Guardian |
+|---|---|
+| <img src="assets/unified-16-sonic-forge-source.png" width="360" alt="UNIFIED 16.0 Sonic Forge and measured Source Truth on the Android 15 release handset"> | <img src="assets/unified-16-sonic-forge-curve.png" width="360" alt="UNIFIED 16.0 ten-band curve, focused half-decibel editor and Headroom Guardian"> |
+
+| Output Engine + Living Playback |
+|---|
+| <img src="assets/unified-16-output-engine.png" width="360" alt="UNIFIED 16.0 Output Engine and Living Playback controls"> |
+
+These are real captures from the installed `16.0-debug` build. The in-place upgrade retained the original install identity and all **3,795 tracks** with the primary Vault checksum unchanged. The complete release gate passed **68 shared tests**, Android lint with zero errors, debug and unsigned-release assembly, and shared iOS compilation. Physical QA also proved that a vertical swipe beginning inside the graph left the full audio-preference checksum unchanged.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -221,7 +239,8 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - Seven activity-aware Runnerz music arcs with Pace Map, Run Readiness, Pace Brain and an explicit, minimal Android handoff.
 - Private Afterglow memories, movement milestones, seasonal challenges and on-device share cards.
 - Complete-credit ShowTime Radio discovery with local-track-first queueing and a supplied ambassador portrait; audio distribution remains approval-gated.
-- Equaliser, bass, loudness and dynamics controls through Audio Lab.
+- Graph-led ten-band Sonic Forge with semantic frequency zones, half-decibel focus controls, three durable Signature profiles, temporary A/B auditioning and honest EQ-only headroom guidance.
+- Differential native DSP updates, coalesced continuous-edit persistence, bass reinforcement and loudness lift.
 - Audio-reactive spectrum and waveform visualisation.
 - A Compose interface spanning Home, Library, Search, Playlists, Now Playing and Audio Lab.
 - Provider-neutral Apple Music/Spotify gateway and ISRC-first cross-catalog merger; production adapters still require registered applications and credentials.
@@ -252,11 +271,12 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Verified evidence
 
-- The complete UNIFIED 15.0 Android gate passed on 25 September 2026: shared logic and UI tests, app unit-test task, lint, debug APK assembly and unsigned release assembly.
-- All 63 executed shared test cases passed with zero failures, errors or skips; Android lint completed successfully.
-- Coverage now includes collection analysis, smart filters, reconciliation, snapshot recovery, indexed search, queue preloading, Velocity planning, Pace Brain, Sonic Atlas, Flow State, adaptive Signal Journal targets, real 28-day season comparison, diversified Next Move validity, metadata-minimizing share output and all five Momentum badge thresholds.
+- The complete UNIFIED 16.0 gate passed on 25 September 2026: shared logic and UI tests, app unit-test task, Android lint, debug and unsigned-release assembly, and shared iOS compilation.
+- All 68 executed shared test cases passed with zero failures, errors or skips; Android lint completed with zero errors.
+- Coverage now includes collection analysis, smart filters, reconciliation, snapshot recovery, indexed search, queue preloading, Velocity planning, Pace Brain, Sonic Atlas, Flow State, adaptive Signal Journal targets, real 28-day season comparison, diversified Next Move validity, profile-codec round trips, malformed-profile rejection, non-finite DSP sanitation, preset recognition and Headroom Guardian behaviour.
 - Shared iOS simulator logic compiles successfully; iOS product parity is not claimed.
-- Versions through 15.0 were installed and visually inspected on a physical Android 15 release handset.
+- Versions through 16.0 were installed and visually inspected on a physical Android 15 release handset.
+- The 16.0 in-place upgrade retained the original install identity and all 3,795 Vault tracks with the primary checksum unchanged; version code 17, real Source Truth output and graph-scroll mutation protection were directly verified.
 - The 15.0 in-place upgrade retained both 3,795-track Vault generations with an unchanged primary checksum; version code 16, real thirty-track playback, forced-restart Season persistence and the external 1080 × 1350 Season-card path were directly verified.
 - On that device, foreground/background playback, advancing position and system media metadata were verified through the active Media3 session.
 - The 11.0 debug APK was installed in place as version code 12. Both Vault files retained 3,796 lines each—the version header plus 3,795 tracks.
