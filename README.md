@@ -1,6 +1,6 @@
 # UNIFIED Music — Kotlin Multiplatform Case Study
 
-[![UNIFIED 17.0 Sonic Recall — the official Runnerz music player](assets/unified-17-repository-cover.png)](#unified-170--sonic-recall)
+[![UNIFIED 19.0 Continuum Relay — the official Runnerz music player](assets/unified-19-repository-cover.png)](#unified-190--continuum-relay)
 
 **The official Runnerz music player—a local-first music system designed and engineered in Namibia around one coherent library, queue, player, movement, listening-intelligence and audio-control experience.**
 
@@ -208,6 +208,24 @@ Sonic Recall makes the complete sound signature contextual while leaving the lis
 
 These are unedited captures from the installed `17.0-debug` build on the same HONOR Android 15 handset. The in-place upgrade retained the original install identity, exact Vault checksum and all **3,795 tracks**. A real track rule survived a forced process stop and cold launch, returned as `TRACK MEMORY IS DRIVING`, and was then removed; Recall finished in `MANUAL` with zero QA rules and the listener's original flat bypassed sound intact.
 
+## UNIFIED 19.0 — Continuum Relay
+
+Continuum Relay combines the planned 18.0 ownership-and-control wave with the 19.0 ecosystem relay. Five **Smart Spaces**—Untouched Gold, Fresh Intake, High Fidelity, Long Signal and Mapped Motion—rebuild from observable local library, history, favourite and Soundprint evidence. They remain playable, explainable and honest when acoustic evidence is still open.
+
+The versioned **UNIFIED Capsule** makes taste and control portable without copying music. It carries favourites, playlists, queue and player state, listening aggregates, badges, Runnerz memories, Audio Lab settings, Signature slots, Sonic Recall and visual preferences behind strict size limits and an integrity checksum. Media bytes, artwork, local media URIs, account tokens and credentials are deliberately excluded. **Queue Director** adds position-preserving reorder, Play Next, remove/undo and Save as Playlist.
+
+Runnerz now receives a strict, explicitly armed native session through a matching-signature package boundary. The receiver persists only bounded session context, must observe a real active or paused run before completion, rejects duplicate returns, and can send only session ID, elapsed seconds and distance metres home. No track identity, route point or listening history crosses the app boundary.
+
+| Continuum | Queue Director |
+|---|---|
+| <img src="assets/unified-19-continuum.png" width="360" alt="UNIFIED 19.0 Continuum Smart Spaces and protected Capsule on Android 15"> | <img src="assets/unified-19-queue-director.png" width="360" alt="UNIFIED 19.0 Queue Director controlling the live local queue"> |
+
+| Capsule actions | Runnerz native relay |
+|---|---|
+| <img src="assets/unified-19-continuum-actions.png" width="360" alt="UNIFIED 19.0 Capsule export, restore and direct queue actions"> | <img src="assets/unified-19-runnerz-relay.png" width="360" alt="Runnerz native soundtrack consent surface receiving a UNIFIED session"> |
+
+These are unedited captures from the installed builds on the same HONOR Android 15 handset. UNIFIED `19.0-debug` (version code 20) and Runnerz `1.0.13` (version code 14) share the verified debug signing certificate. Capsule export and restore completed through Android's real share sheet and document picker; the exact 3,795-track Vault checksum remained unchanged. The final callback is intentionally not claimed as field-complete until a genuine GPS run is banked.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -254,6 +272,10 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - Graph-led ten-band Sonic Forge with semantic frequency zones, half-decibel focus controls, three durable Signature profiles, temporary A/B auditioning and honest EQ-only headroom guidance.
 - Opt-in track, album and artist Sonic Recall memories with deterministic specificity, visible active context, manual takeover and one-tap removal.
 - Personal-library Level Compass based on measured local sample-RMS median, bounded advice and non-positive protective alignment.
+- Five playable Smart Spaces derived from local evidence rather than invented genre or mood labels.
+- Checksum-protected Continuum Capsule export and restore for listener state, explicitly excluding media and credentials.
+- Reversible Queue Director controls with reorder, Play Next, remove/undo and Save as Playlist.
+- Matching-signature UNIFIED-to-Runnerz relay with consent, aggregate-only completion and duplicate protection.
 - Differential native DSP updates, coalesced continuous-edit persistence, bass reinforcement and loudness lift.
 - Audio-reactive spectrum and waveform visualisation.
 - A Compose interface spanning Home, Library, Search, Playlists, Now Playing and Audio Lab.
@@ -285,6 +307,10 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Verified evidence
 
+- The complete UNIFIED 19.0 Android gate passed on 26 September 2026: shared logic and UI tests, app unit-test task, Android lint, debug and unsigned-release assembly. Runnerz unit tests, lint, debug and release assembly also passed.
+- UNIFIED 19.0 and Runnerz 1.0.13 were installed in place on the physical Android 15 handset with the same signing-certificate SHA-256. The strict native handoff rendered and persisted an armed session.
+- A 76,284-byte Capsule was exported through the physical share chooser, selected through Android's document picker and restored successfully; all 3,795 tracks and the exact pre-upgrade Vault checksum remained intact.
+- Shared iOS test sources compile; simulator linking is blocked on this host by an unconfigured Xcode command-line toolchain, and iOS product parity is not claimed.
 - The complete UNIFIED 17.0 gate passed on 25 September 2026: shared logic and UI compilation/tests, app unit-test task, Android lint, debug and unsigned-release assembly, and shared iOS compilation.
 - All 71 executed shared test cases passed with zero failures; Android lint completed with zero errors.
 - Coverage now includes collection analysis, smart filters, reconciliation, snapshot recovery, indexed search, queue preloading, Velocity planning, Pace Brain, Sonic Atlas, Flow State, adaptive Signal Journal targets, real 28-day season comparison, diversified Next Move validity, profile and Recall codec round trips, Recall priority and replacement, unknown-context rejection, RMS median alignment, non-finite DSP sanitation, preset recognition and Headroom Guardian behaviour.
@@ -303,14 +329,14 @@ Android is the production-focused implementation. The iOS target remains an earl
 
 Apple Music and Spotify production connections are not claimed. The provider-neutral gateway, capability model and catalog merger exist, but real adapters require registered applications, approved redirect URIs, signing identities and secure token infrastructure.
 
-The UNIFIED-to-Runnerz sender and return contract are implemented, and the exact browser-fallback round trip is physically verified. A final signed Runnerz-app round trip is still required before describing the native cross-app bridge as production-complete. ShowTime Radio is a metadata-matched local activation surface, not proof of media rights, a bundled catalogue or a streaming service.
+The signed UNIFIED-to-Runnerz sender, strict receiver, consent surface, durable aggregate relay and return parser are implemented and installed. The arm leg is physically verified; a genuine GPS run must still reach completion before the final native callback is described as field-accepted. ShowTime Radio is a metadata-matched local activation surface, not proof of media rights, a bundled catalogue or a streaming service.
 
 ## Next milestones
 
 - Measured true overlapping crossfade, only if device testing shows it improves on native seamless playback and Transition Bloom.
 - Room-backed incremental indexing only if physical performance measurements justify the added database complexity.
 - Feature-owned navigation and state modules.
-- Signed physical-device validation of the complete UNIFIED → Runnerz → UNIFIED session loop.
+- Genuine GPS-run field acceptance of the final Runnerz → UNIFIED aggregate completion callback.
 - Ambassador editorial and media publication only after explicit rights approval.
 - Native iOS playback and remote-command integration.
 
