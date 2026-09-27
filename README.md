@@ -1,6 +1,8 @@
 # UNIFIED Music — Kotlin Multiplatform Case Study
 
-[![UNIFIED 19.0 Continuum Relay — the official Runnerz music player](assets/unified-19-repository-cover.png)](#unified-190--continuum-relay)
+<p align="center">
+  <a href="#unified-200--signal-command"><img src="assets/unified-20-command-deck.png" width="420" alt="UNIFIED 20.0 Signal Command Deck on the physical Android 15 handset"></a>
+</p>
 
 **The official Runnerz music player—a local-first music system designed and engineered in Namibia around one coherent library, queue, player, movement, listening-intelligence and audio-control experience.**
 
@@ -226,6 +228,18 @@ Runnerz now receives a strict, explicitly armed native session through a matchin
 
 These are unedited captures from the installed builds on the same HONOR Android 15 handset. UNIFIED `19.0-debug` (version code 20) and Runnerz `1.0.13` (version code 14) share the verified debug signing certificate. Capsule export and restore completed through Android's real share sheet and document picker; the exact 3,795-track Vault checksum remained unchanged. The final callback is intentionally not claimed as field-complete until a genuine GPS run is banked.
 
+## UNIFIED 20.0 — Signal Command
+
+Signal Command turns the top-left UNIFIED mark into a working control surface. One gesture opens a living Command Deck with the current playback title, indexed track count, queue depth and signed Runnerz relay state, plus direct Audio Lab navigation, Continuum Capsule actions, provider readiness and the official SolarSpin / ownership block.
+
+<p align="center">
+  <img src="assets/unified-20-command-deck.png" width="420" alt="UNIFIED 20.0 Command Deck showing live playback, 3,795 secured tracks, Capsule controls, provider readiness and the armed Runnerz relay">
+</p>
+
+This is an unedited capture from the in-place `20.0-debug` upgrade on the HONOR REA-NX9 running Android 15. The handset reports version code `21`; the original install identity, listener state, all **3,795 tracks** and the exact pre-upgrade Vault checksum remain intact. The Command Deck opened from the brand mark, its Audio Lab route landed on Sonic Forge / Recall, and its SolarSpin link opened the founder portfolio in Chrome.
+
+The provider panel is deliberately a readiness boundary, not a streaming claim. Apple Music and Spotify still require registered production applications, credentials and platform adapters. Capsule portability still excludes media and credentials, and the Runnerz return remains aggregate-only; this UI release does not fabricate provider access, remote sync, media upload or completed GPS acceptance.
+
 ## My role
 
 **Freeman Ipumbu — Product designer and software engineer**
@@ -307,6 +321,10 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Verified evidence
 
+- The complete UNIFIED 20.0 Android gate passed on 26 September 2026: shared logic and UI host tests, app unit tests, Android lint, debug assembly and unsigned-release assembly.
+- UNIFIED 20.0 is installed in place on the physical HONOR Android 15 handset as version code 21. The live Command Deck shows 3,795 secured tracks, 3,795 tracks in queue and an armed Runnerz relay while preserving the prior install identity and listener state.
+- The on-device Vault remains 3,796 lines including its header / 3,795 tracks, with SHA-256 `6ab44b92fcae550ccd688692656f7843a602fc77f108a1a1d537c2decd081d70`, matching the pre-upgrade checksum.
+- The Command Deck opened from the Home mark; Audio Lab reached Sonic Forge / Recall, and the official SolarSpin link opened the founder portfolio in Chrome. No provider login, remote sync, media upload or GPS completion is claimed.
 - The complete UNIFIED 19.0 Android gate passed on 26 September 2026: shared logic and UI tests, app unit-test task, Android lint, debug and unsigned-release assembly. Runnerz unit tests, lint, debug and release assembly also passed.
 - UNIFIED 19.0 and Runnerz 1.0.13 were installed in place on the physical Android 15 handset with the same signing-certificate SHA-256. The strict native handoff rendered and persisted an armed session.
 - A 76,284-byte Capsule was exported through the physical share chooser, selected through Android's document picker and restored successfully; all 3,795 tracks and the exact pre-upgrade Vault checksum remained intact.
@@ -328,6 +346,8 @@ Local ownership and honest playback state come first. Streaming providers enter 
 Android is the production-focused implementation. The iOS target remains an early shell; native playback and shared production UI are not presented as complete.
 
 Apple Music and Spotify production connections are not claimed. The provider-neutral gateway, capability model and catalog merger exist, but real adapters require registered applications, approved redirect URIs, signing identities and secure token infrastructure.
+
+The UNIFIED 20.0 Command Deck reports the state the app already owns; it is not evidence of provider authentication, cloud sync or uploaded media. Capsule export remains listener-state portability rather than a music-file backup.
 
 The signed UNIFIED-to-Runnerz sender, strict receiver, consent surface, durable aggregate relay and return parser are implemented and installed. The arm leg is physically verified; a genuine GPS run must still reach completion before the final native callback is described as field-accepted. ShowTime Radio is a metadata-matched local activation surface, not proof of media rights, a bundled catalogue or a streaming service.
 
