@@ -324,7 +324,7 @@ Local ownership and honest playback state come first. Streaming providers enter 
 - The complete UNIFIED 20.0 Android gate passed on 26 September 2026: shared logic and UI host tests, app unit tests, Android lint, debug assembly and unsigned-release assembly.
 - UNIFIED 20.0 is installed in place on the physical HONOR Android 15 handset as version code 21. The live Command Deck shows 3,795 secured tracks, 3,795 tracks in queue and an armed Runnerz relay while preserving the prior install identity and listener state.
 - The on-device Vault remains 3,796 lines including its header / 3,795 tracks, with SHA-256 `6ab44b92fcae550ccd688692656f7843a602fc77f108a1a1d537c2decd081d70`, matching the pre-upgrade checksum.
-- The Command Deck opened from the Home mark; Audio Lab reached Sonic Forge / Recall, and the official SolarSpin link opened the founder portfolio in Chrome. No provider login, remote sync, media upload or GPS completion is claimed.
+- The Command Deck opened from the Home mark; Audio Lab reached Sonic Forge / Recall, and the official SolarSpin link opened the SolarSpin experience in Chrome. No provider login, remote sync, media upload or GPS completion is claimed.
 - The complete UNIFIED 19.0 Android gate passed on 26 September 2026: shared logic and UI tests, app unit-test task, Android lint, debug and unsigned-release assembly. Runnerz unit tests, lint, debug and release assembly also passed.
 - UNIFIED 19.0 and Runnerz 1.0.13 were installed in place on the physical Android 15 handset with the same signing-certificate SHA-256. The strict native handoff rendered and persisted an armed session.
 - A 76,284-byte Capsule was exported through the physical share chooser, selected through Android's document picker and restored successfully; all 3,795 tracks and the exact pre-upgrade Vault checksum remained intact.
@@ -367,3 +367,5 @@ The private repository contains the working implementation. This public case stu
 ---
 
 © 2026 Freeman Ipumbu. Shared for portfolio evaluation; no licence is granted to reproduce the product or implementation.
+
+<p align="center"><strong>A Digital Experience by <a href="https://www.solarspin-namibia.xyz/">SolarSpin Technologies</a>.</strong></p>
