@@ -1,12 +1,61 @@
 # UNIFIED Music — Kotlin Multiplatform Case Study
 
 <p align="center">
-  <a href="#unified-200--signal-command"><img src="assets/unified-20-command-deck.png" width="420" alt="UNIFIED 20.0 Signal Command Deck on the physical Android 15 handset"></a>
+  <a href="#unified-500-deep-current"><img src="assets/unified-50-studio-editions.jpg" width="100%" alt="UNIFIED 50 Signal Studio Editorial, Orbit and Afterhours native share-card exports"></a>
 </p>
 
 **The official Runnerz music player—a local-first music system designed and engineered in Namibia around one coherent library, queue, player, movement, listening-intelligence and audio-control experience.**
 
 > This is a public product and engineering case study. Deployable source, device configuration, local media, build artefacts, credentials and private implementation details remain in a separate private repository.
+
+## UNIFIED 50.0 Deep Current
+
+UNIFIED has grown from a local player into a personal music system: a live lyric stage, a high-resolution sharing studio, editable file metadata, deliberate music-source control and listening memory that stays on the device. The current Android candidate is **50.0, build 56**, installed in place on the HONOR 90 on 8 November 2026. The candidate has not replaced the **20.0 / code 22** binary in Google Play.
+
+### Living Lyrics
+
+An artwork-lit stage follows real playback time, highlights the current line and gives its timestamp interval a quiet progress cue. Drag to browse, return to LIVE, or hold the beginning with Top. The cover spindle and light respond to the clock and hold when paused. Build 56 refines the words with locally bundled Inter Medium, about 12% smaller than the previous bold text; the recording title retains Instrument Serif.
+
+Embedded words, imported or pasted LRC/text, saved timing adjustment and recording-version selection work together. Opening the stage stays offline. An explicit Find lyrics or Versions action contacts free LRCLIB with the disclosed song metadata; no audio is uploaded. Untimed versions clearly use Reading mode.
+
+<p align="center"><img src="assets/unified-50-living-lyrics-55.png" width="360" alt="Native Living Lyrics stage with original QA words and artwork"></p>
+
+This stage capture is from build 55 with original demonstration media. Build 56 further reduces the lyric size and changes the lyric face to Inter; its final typography is reviewed on the physical phone.
+
+### Capture the Signal
+
+Signal Studio offers **Editorial, Orbit and Afterhours** editions in Post, Story and Square formats across six sharing surfaces. Now Playing, listening portraits and Rewind stories become deliberate compositions rather than tiny dashboard screenshots. Images are drawn locally with bundled fonts, previewed in the app and saved or handed to the system share chooser only when requested. An optional song code can be read from a chosen image, matched against the local library and reviewed before playback.
+
+![Three native Signal Studio editions with original QA artwork](assets/unified-50-studio-editions.jpg)
+
+### Own the library
+
+Tag Studio edits real title, artist, album and related file metadata, with a save-copy path and Android-authorized original-file changes backed by a verified recovery copy. Music sources supports explicit folder exceptions or selected folders. Short skits and interludes stay included; there is no automatic duration cutoff. Metadata search, folder/genre/year browsing, M3U/M3U8/PLS review, queue editing and playlist export give a large collection practical structure.
+
+### Control the listening session
+
+Pitch-preserving 0.5–2.0× playback, A–B passage replay, ten-second seeking and named bookmarks sit alongside seamless Media3 playback, Audio Lab and Sonic Recall. Long pages offer return-to-top actions. Living Pulseprint, a 28-day Rewind and shareable listening portraits turn actual local listening history into an evolving record without inventing statistics.
+
+### Beyond the phone
+
+The Android implementation includes Android Auto browsing/search/voice surfaces, a Wear OS companion, a Home Signal widget, explicit Google Play updates, encrypted Google Drive Capsule backup and verified-peer Nearby Signal Drop. Capsules carry selected player memory and settings, never the music files. Physical car/watch acceptance remains separate from assemblies and emulator checks. The iOS foundation now has native AVFoundation playback, durable local imports, a queue, background audio and lock-screen commands; complete iOS, Apple Watch and CarPlay acceptance remains future work.
+
+### Worldwide closed testing
+
+The country/group expansion was verified published on **7 November 2026** across **178 countries and regions**. Anyone in a supported region can join the tester group using their Play account, then separately opt into the test and install the available release. Membership alone is not Play opt-in. The current Play binary remains 20.0 / code 22; these v50 features describe the newer local candidate. Public production remains a separate Google Play milestone.
+
+**[1. Join the tester group](https://groups.google.com/g/unified-music-worldwide)** · **[2. Opt into Google Play](https://play.google.com/apps/testing/com.unified.music)** · **[Privacy policy](https://runnerznamibia.com/unified-privacy)**
+
+### Verification for this candidate
+
+- Build 56: Android and Wear assemblies, the shared UI host check and both lint tasks pass; both APKs pass 16 KB alignment. The final Inter font files and full SIL licence match the official source archive.
+- Build 56 phone review: lyric wrapping and controls fit at the original system text size. The fresh upgrade preserves all 3,808 library identities, the exact 3,796-item queue, 39 favourites, playlists and saved playback settings.
+- Build 55 baseline: 131 shared-logic checks, one shared-UI host check and 29 Android native acceptance cases pass, including five live-lyric and four seek-gesture cases. Normal and 150% text layouts were inspected on the isolated player for that build.
+- Build 56 emulator regression attempts are inconclusive after Android System UI freezes and the runner exits before case results. They are not counted as passes; phone layout review is separate from emulator automation and performance benchmarking.
+
+## Earlier releases
+
+The dated release history below records how the system developed. Counts and platform boundaries in those historical entries describe their respective builds.
 
 ## UNIFIED 3.0 — Namib After Dark
 
@@ -343,22 +392,19 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Current boundary
 
-Android is the production-focused implementation. The iOS target remains an early shell; native playback and shared production UI are not presented as complete.
+Android is the primary implementation. Version 50.0 / build 56 is a local candidate, while Google Play closed testing currently serves version 20.0 / code 22. Public production is not claimed. Android Auto and Wear integrations require their own physical acceptance; Apple Watch and CarPlay are not shipped. The native iOS playback foundation requires full Xcode and device verification before release.
 
-Apple Music and Spotify production connections are not claimed. The provider-neutral gateway, capability model and catalog merger exist, but real adapters require registered applications, approved redirect URIs, signing identities and secure token infrastructure.
+Apple Music, Spotify and YouTube provider playback are not shipped. Google Drive backup and Nearby transfer are optional Capsule actions, not music-file backups or remote streaming. Drive encryption uses a device-held key, so retaining a backup does not guarantee recovery after that key is lost. Lyrics and listening bookmarks are not yet included in Capsules.
 
-The UNIFIED 20.0 Command Deck reports the state the app already owns; it is not evidence of provider authentication, cloud sync or uploaded media. Capsule export remains listener-state portability rather than a music-file backup.
-
-The signed UNIFIED-to-Runnerz sender, strict receiver, consent surface, durable aggregate relay and return parser are implemented and installed. The arm leg is physically verified; a genuine GPS run must still reach completion before the final native callback is described as field-accepted. ShowTime Radio is a metadata-matched local activation surface, not proof of media rights, a bundled catalogue or a streaming service.
+The signed Runnerz relay passes bounded session information rather than track identities or listening history. A genuine GPS run remains the final completion-callback field gate. ShowTime local metadata matching does not grant media distribution rights or provide a remote catalogue.
 
 ## Next milestones
 
-- Measured true overlapping crossfade, only if device testing shows it improves on native seamless playback and Transition Bloom.
-- Room-backed incremental indexing only if physical performance measurements justify the added database complexity.
-- Feature-owned navigation and state modules.
-- Genuine GPS-run field acceptance of the final Runnerz → UNIFIED aggregate completion callback.
-- Ambassador editorial and media publication only after explicit rights approval.
-- Native iOS playback and remote-command integration.
+- Finish physical playback/gesture performance, Android Auto and Wear OS acceptance.
+- Resolve the unreliable emulator environment and rerun the build-56 native regression cases.
+- Complete the v50 Play release declarations and upload the new binary after release checks.
+- Verify the full native iOS player with Xcode and supported hardware before Apple companion work.
+- Complete the genuine Runnerz GPS-run return path in the field.
 
 ## Repository boundary
 
@@ -369,3 +415,4 @@ The private repository contains the working implementation. This public case stu
 © 2026 Freeman Ipumbu. Shared for portfolio evaluation; no licence is granted to reproduce the product or implementation.
 
 <p align="center"><strong>A Digital Experience by <a href="https://www.solarspin-namibia.xyz/">SolarSpin Technologies</a>.</strong></p>
+
