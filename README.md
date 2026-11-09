@@ -1,7 +1,7 @@
 # UNIFIED Music — Kotlin Multiplatform Case Study
 
 <p align="center">
-  <a href="#unified-500-deep-current"><img src="assets/unified-50-studio-editions.jpg" width="100%" alt="UNIFIED 50 Signal Studio Editorial, Orbit and Afterhours native share-card exports"></a>
+  <a href="#unified-500-deep-current"><img src="assets/unified-50-glass-editions-60.jpg" width="100%" alt="UNIFIED 50 Signal Studio Editorial, Orbit and Afterhours native share-card exports"></a>
 </p>
 
 **The official Runnerz music player—a local-first music system designed and engineered in Namibia around one coherent library, queue, player, movement, listening-intelligence and audio-control experience.**
@@ -10,27 +10,27 @@
 
 ## UNIFIED 50.0 Deep Current
 
-UNIFIED has grown from a local player into a personal music system: a live lyric stage, a high-resolution sharing studio, editable file metadata, deliberate music-source control and listening memory that stays on the device. The current Android candidate is **50.0, build 56**, installed in place on the HONOR 90 on 8 November 2026. The candidate has not replaced the **20.0 / code 22** binary in Google Play.
+UNIFIED has grown from a local player into a personal music system: a live lyric stage, a high-resolution sharing studio, editable file metadata, deliberate music-source control and listening memory that stays on the device. The current Android candidate is **50.0, build 60**, installed in place on the HONOR 90 on 9 November 2026. The candidate has not replaced the **20.0 / code 22** binary in Google Play.
 
 ### Living Lyrics
 
-An artwork-lit stage follows real playback time, highlights the current line and gives its timestamp interval a quiet progress cue. Drag to browse, return to LIVE, or hold the beginning with Top. The cover spindle and light respond to the clock and hold when paused. Build 56 refines the words with locally bundled Inter Medium, about 12% smaller than the previous bold text; the recording title retains Instrument Serif.
+An artwork-lit stage follows real playback time, highlights the current line and gives its timestamp interval a quiet progress cue. Drag to browse, return to LIVE, or hold the beginning with Top. The cover spindle and light respond to the clock and hold when paused. Build 60 uses locally bundled Inter Medium at 29 sp, with cleaner spacing and frosted controls; the recording title retains Instrument Serif. Decorative blur and motion adapt to memory, acceleration, heat, power saving and the system animation setting.
 
 Embedded words, imported or pasted LRC/text, saved timing adjustment and recording-version selection work together. Opening the stage stays offline. An explicit Find lyrics or Versions action contacts free LRCLIB with the disclosed song metadata; no audio is uploaded. Untimed versions clearly use Reading mode.
 
-<p align="center"><img src="assets/unified-50-living-lyrics-55.png" width="360" alt="Native Living Lyrics stage with original QA words and artwork"></p>
+<p align="center"><img src="assets/unified-50-glass-lyrics-60.png" width="360" alt="Native Living Lyrics stage with original QA words and artwork"></p>
 
-This stage capture is from build 55 with original demonstration media. Build 56 further reduces the lyric size and changes the lyric face to Inter; its final typography is reviewed on the physical phone.
+This native build-60 stage capture uses original demonstration media. The lyric face is Inter Medium at 29 sp, with a separate Instrument Serif recording title. Normal and 150% system-text layouts are reviewed on the isolated player.
 
 ### Capture the Signal
 
-Signal Studio offers **Editorial, Orbit and Afterhours** editions in Post, Story and Square formats across six sharing surfaces. Now Playing, listening portraits and Rewind stories become deliberate compositions rather than tiny dashboard screenshots. Images are drawn locally with bundled fonts, previewed in the app and saved or handed to the system share chooser only when requested. An optional song code can be read from a chosen image, matched against the local library and reviewed before playback.
+Signal Studio combines **Editorial, Orbit and Afterhours** with **Silk, Frost and Gloss**, each in Post, Story or Square: 27 compositions across six sharing surfaces. Now Playing, listening portraits and Rewind stories become deliberate compositions rather than tiny dashboard screenshots. Artwork colours now shape the background, with bounded artwork diffusion, frosted sheets and a refined Signal Loop crest. Responsive 1080-pixel previews keep choices selectable while rendering; Save or Share creates a fresh 2160-pixel-wide PNG. Prominent glass play controls breathe during playback and spring back after a press. Shared cards, Library actions, menus and Audio controls gain refractive edges and finite touch reflections. The frosted seeker keeps its smooth local drag preview and one completed seek. Images are drawn locally with bundled fonts and reach the system share chooser only when requested. An optional song code can be read from a chosen image, matched against the local library and reviewed before playback.
 
-![Three native Signal Studio editions with original QA artwork](assets/unified-50-studio-editions.jpg)
+![Three native Signal Studio editions with original QA artwork](assets/unified-50-glass-editions-60.jpg)
 
 ### Own the library
 
-Tag Studio edits real title, artist, album and related file metadata, with a save-copy path and Android-authorized original-file changes backed by a verified recovery copy. Music sources supports explicit folder exceptions or selected folders. Short skits and interludes stay included; there is no automatic duration cutoff. Metadata search, folder/genre/year browsing, M3U/M3U8/PLS review, queue editing and playlist export give a large collection practical structure.
+Tag Studio edits real title, artist, album and related file metadata, with a save-copy path and Android-authorized original-file changes backed by a verified recovery copy. Artwork Atelier automatically smooths low-resolution display covers locally, and explicitly searches MusicBrainz / Cover Art Archive for reviewed front covers of at least 1000 × 1000 decoded pixels. Reversible private artwork choices survive rescans without rewriting audio files. Opening the atelier stays offline; search shares album and artist metadata only. The hosted MusicBrainz service is free for non-commercial use; commercial terms and artwork rights still apply. Music sources supports explicit folder exceptions or selected folders. Short skits and interludes stay included; there is no automatic duration cutoff. Metadata search, folder/genre/year browsing, M3U/M3U8/PLS review, queue editing and playlist export give a large collection practical structure.
 
 ### Control the listening session
 
@@ -48,10 +48,11 @@ The country/group expansion was verified published on **7 November 2026** across
 
 ### Verification for this candidate
 
-- Build 56: Android and Wear assemblies, the shared UI host check and both lint tasks pass; both APKs pass 16 KB alignment. The final Inter font files and full SIL licence match the official source archive.
-- Build 56 phone review: lyric wrapping and controls fit at the original system text size. The fresh upgrade preserves all 3,808 library identities, the exact 3,796-item queue, 39 favourites, playlists and saved playback settings.
-- Build 55 baseline: 131 shared-logic checks, one shared-UI host check and 29 Android native acceptance cases pass, including five live-lyric and four seek-gesture cases. Normal and 150% text layouts were inspected on the isolated player for that build.
-- Build 56 emulator regression attempts are inconclusive after Android System UI freezes and the runner exits before case results. They are not counted as passes; phone layout review is separate from emulator automation and performance benchmarking.
+- Build 60: Android and Wear assemblies, four shared-UI host checks and both lint tasks pass. Android lint has zero errors and 59 advisory warnings; Wear lint has zero errors and six warnings. Both APKs pass 16 KB alignment.
+- Twenty-four Android native acceptance cases pass in 64.484 seconds and cover all 27 high-resolution card combinations and optional code decoding, all nine clean style/finish choices, previews, lyric following, seek gestures, haptic/scroll cancellation, long/multilingual text, offline lyrics, updates and reversible artwork storage. A separate public-album live provider check succeeded after an initial busy response; no personal music metadata was used.
+- Actual native exports and normal/150% text layouts are reviewed with original demonstration media. The real local playback clock is checked separately from the externally advanced clock used by the live-lyric harness.
+- The fresh phone upgrade preserves 3,808 library identities, the exact 3,796-item queue, 83 favourites, playlists and saved playback settings, with playback resumed and the original 85% text setting.
+- The previous build-55 baseline retains 131 shared-logic checks, one shared-UI host check and 29 native passes. Build-56 emulator attempts were inconclusive; build 60 uses a fresh isolated Android player with host graphics. Neither environment is a physical phone frame-rate benchmark.
 
 ## Earlier releases
 
@@ -392,7 +393,7 @@ Local ownership and honest playback state come first. Streaming providers enter 
 
 ## Current boundary
 
-Android is the primary implementation. Version 50.0 / build 56 is a local candidate, while Google Play closed testing currently serves version 20.0 / code 22. Public production is not claimed. Android Auto and Wear integrations require their own physical acceptance; Apple Watch and CarPlay are not shipped. The native iOS playback foundation requires full Xcode and device verification before release.
+Android is the primary implementation. Version 50.0 / build 60 is a local candidate, while Google Play closed testing currently serves version 20.0 / code 22. Public production is not claimed. Android Auto and Wear integrations require their own physical acceptance; Apple Watch and CarPlay are not shipped. The native iOS playback foundation requires full Xcode and device verification before release.
 
 Apple Music, Spotify and YouTube provider playback are not shipped. Google Drive backup and Nearby transfer are optional Capsule actions, not music-file backups or remote streaming. Drive encryption uses a device-held key, so retaining a backup does not guarantee recovery after that key is lost. Lyrics and listening bookmarks are not yet included in Capsules.
 
@@ -401,7 +402,7 @@ The signed Runnerz relay passes bounded session information rather than track id
 ## Next milestones
 
 - Finish physical playback/gesture performance, Android Auto and Wear OS acceptance.
-- Resolve the unreliable emulator environment and rerun the build-56 native regression cases.
+- Continue representative physical performance and battery measurements across device classes; the visual-quality policy is a conservative capability heuristic.
 - Complete the v50 Play release declarations and upload the new binary after release checks.
 - Verify the full native iOS player with Xcode and supported hardware before Apple companion work.
 - Complete the genuine Runnerz GPS-run return path in the field.
